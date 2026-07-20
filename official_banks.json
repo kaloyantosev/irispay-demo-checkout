@@ -1,0 +1,483 @@
+{
+  "bulgaria": [
+    {
+      "id": null,
+      "name": "Revolut",
+      "bic": "REVOGB21",
+      "logo": "assets/banks/bulgaria_revolut.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/revolut/revolut.png"
+    },
+    {
+      "id": null,
+      "name": "Unicredit Bulbank",
+      "bic": "UNCRBGSF",
+      "logo": "assets/banks/bulgaria_unicredit_bulbank.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/bulbank/unicredit-light@3x.png"
+    },
+    {
+      "id": null,
+      "name": "DSK Bank",
+      "bic": "STSABGSF",
+      "logo": "assets/banks/bulgaria_dsk_bank.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/dsk/dsk-light@3x.png"
+    },
+    {
+      "id": null,
+      "name": "UBB",
+      "bic": "UBBSBGSF",
+      "logo": "assets/banks/bulgaria_ubb.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/ubb/Ubb-light@3x.png"
+    },
+    {
+      "id": null,
+      "name": "Postbank",
+      "bic": "BPBIBGSF",
+      "logo": "assets/banks/bulgaria_postbank.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/postbank/postbank-cropped@3x.png"
+    },
+    {
+      "id": null,
+      "name": "PIB",
+      "bic": "FINVBGSF",
+      "logo": "assets/banks/bulgaria_pib.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/pib/fibank-logo-light@3x.png"
+    },
+    {
+      "id": null,
+      "name": "CCB",
+      "bic": "CECBBGSF",
+      "logo": "assets/banks/bulgaria_ccb.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/ccb/ccb2.png"
+    },
+    {
+      "id": null,
+      "name": "Invest Bank",
+      "bic": "IORTBGSF",
+      "logo": "assets/banks/bulgaria_invest_bank.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/invest/Ibank-light@3x.png"
+    },
+    {
+      "id": null,
+      "name": "Texim Bank",
+      "bic": null,
+      "logo": "assets/banks/bulgaria_texim_bank.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/texim/texim.png"
+    },
+    {
+      "id": null,
+      "name": "TBI Bank",
+      "bic": "TBIBBGSF",
+      "logo": "assets/banks/bulgaria_tbi_bank.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/tbi/tbi-light.png"
+    },
+    {
+      "id": null,
+      "name": "Bulgarian Developement Bank",
+      "bic": "NASBBGSF",
+      "logo": "assets/banks/bulgaria_bulgarian_developement_bank.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/bbr/bbr.png"
+    },
+    {
+      "id": null,
+      "name": "Allianz Bank",
+      "bic": "BUINBGSF",
+      "logo": "assets/banks/bulgaria_allianz_bank.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/allianz/Allianz-light@3x.png"
+    },
+    {
+      "id": null,
+      "name": "Asset International Bank",
+      "bic": "IABGBGSF",
+      "logo": "assets/banks/bulgaria_asset_international_bank.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/asset/asset.png"
+    },
+    {
+      "id": null,
+      "name": "Procredit",
+      "bic": "PRCBBGSF",
+      "logo": "assets/banks/bulgaria_procredit.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/procredit/procredit-bank@3x.png"
+    },
+    {
+      "id": null,
+      "name": "DBank",
+      "bic": "DEMIBGSF",
+      "logo": "assets/banks/bulgaria_dbank.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/dbank/dbank-logo@3x.png"
+    },
+    {
+      "id": null,
+      "name": "BACB",
+      "bic": "BGUSBGSF",
+      "logo": "assets/banks/bulgaria_bacb.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/bacb/bacb.png"
+    },
+    {
+      "id": null,
+      "name": "Paysera",
+      "bic": "EVIULT2V",
+      "logo": "assets/banks/bulgaria_paysera.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/paysera/paysera_new.png"
+    },
+    {
+      "id": null,
+      "name": "ICARD",
+      "bic": "INTFBGSF",
+      "logo": "assets/banks/bulgaria_icard.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/icard/icard.png"
+    },
+    {
+      "id": null,
+      "name": "Easy Pay",
+      "bic": "ESPYBGS1",
+      "logo": "assets/banks/bulgaria_easy_pay.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/easypay/easypay.png"
+    },
+    {
+      "id": null,
+      "name": "Crypto.com",
+      "bic": null,
+      "logo": "assets/banks/bulgaria_crypto_com.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/crypto/crypto.png"
+    },
+    {
+      "id": null,
+      "name": "Curve UAB",
+      "bic": null,
+      "logo": "assets/banks/bulgaria_curve_uab.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/curve/curve.png"
+    },
+    {
+      "id": null,
+      "name": "Ebury",
+      "bic": "EBURGB2L",
+      "logo": "assets/banks/bulgaria_ebury.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/ebury/ebury.png"
+    },
+    {
+      "id": null,
+      "name": "PayPal",
+      "bic": null,
+      "logo": "assets/banks/bulgaria_paypal.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/paypal/paypal.png"
+    },
+    {
+      "id": null,
+      "name": "Transcard",
+      "bic": null,
+      "logo": "assets/banks/bulgaria_transcard.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/transcard/transcard.png"
+    },
+    {
+      "id": null,
+      "name": "Ecoints",
+      "bic": "",
+      "logo": "assets/banks/bulgaria_ecoints.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/ecoints/ecoints.png"
+    }
+  ],
+  "romania": [
+    {
+      "id": null,
+      "name": "Revolut Romania",
+      "bic": "REVOGB21",
+      "logo": "assets/banks/romania_revolut_romania.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/revolut/revolut.png"
+    },
+    {
+      "id": null,
+      "name": "ING",
+      "bic": "INGBROBU",
+      "logo": "assets/banks/romania_ing.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/ing/ng-group-bank.png"
+    },
+    {
+      "id": null,
+      "name": "BRD Corporate",
+      "bic": null,
+      "logo": "assets/banks/romania_brd_corporate.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/brd/brd_corporate.png"
+    },
+    {
+      "id": null,
+      "name": "Transilvania Bank Romania",
+      "bic": "BTRLRO22",
+      "logo": "assets/banks/romania_transilvania_bank_romania.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/transilvania/bacatransilvania.png"
+    },
+    {
+      "id": null,
+      "name": "Banca Comerciala Romana",
+      "bic": "RNCBROBU",
+      "logo": "assets/banks/romania_banca_comerciala_romana.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/bcr/bcr.png"
+    },
+    {
+      "id": null,
+      "name": "Unicredit Romania",
+      "bic": "BACXROBU",
+      "logo": "assets/banks/romania_unicredit_romania.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/unicreditro/1280px-UniCredit.png"
+    },
+    {
+      "id": null,
+      "name": "Raiffeisen Romania",
+      "bic": "RZBRROBU",
+      "logo": "assets/banks/romania_raiffeisen_romania.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/raiffeisen/raiffeisen-light@3x.png"
+    },
+    {
+      "id": null,
+      "name": "Libra",
+      "bic": "BRELROBU",
+      "logo": "assets/banks/romania_libra.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/libra/libra-light.png"
+    },
+    {
+      "id": null,
+      "name": "CEC",
+      "bic": "CECEROBU",
+      "logo": "assets/banks/romania_cec.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/cec/CEC_Bank.png"
+    },
+    {
+      "id": null,
+      "name": "Exim Bank",
+      "bic": "EXIMROBU",
+      "logo": "assets/banks/romania_exim_bank.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/exim/exim.png"
+    },
+    {
+      "id": null,
+      "name": "Paysera",
+      "bic": "EVIULT2V",
+      "logo": "assets/banks/romania_paysera.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/paysera/paysera_new.png"
+    },
+    {
+      "id": null,
+      "name": "Vista",
+      "bic": "UNCRBGSF",
+      "logo": "assets/banks/romania_vista.svg",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/vista/vista.svg"
+    },
+    {
+      "id": null,
+      "name": "Ebury",
+      "bic": "EBURGB2L",
+      "logo": "assets/banks/romania_ebury.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/ebury/ebury.png"
+    },
+    {
+      "id": null,
+      "name": "Salt Bank",
+      "bic": "ROINROBU",
+      "logo": "assets/banks/romania_salt_bank.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/saltbank/saltbank.png"
+    },
+    {
+      "id": null,
+      "name": "Curve UAB",
+      "bic": null,
+      "logo": "assets/banks/romania_curve_uab.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/curve/curve.png"
+    },
+    {
+      "id": null,
+      "name": "Crypto.com",
+      "bic": null,
+      "logo": "assets/banks/romania_crypto_com.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/crypto/crypto.png"
+    },
+    {
+      "id": null,
+      "name": "PayPal",
+      "bic": null,
+      "logo": "assets/banks/romania_paypal.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/paypal/paypal.png"
+    },
+    {
+      "id": null,
+      "name": "BRD",
+      "bic": null,
+      "logo": "assets/banks/romania_brd.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/brd/brd.png"
+    }
+  ],
+  "greece": [
+    {
+      "id": null,
+      "name": "Alpha Bank Greece",
+      "bic": "CRBAGRAA",
+      "logo": "assets/banks/greece_alpha_bank_greece.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/alpha/alpha.png"
+    },
+    {
+      "id": null,
+      "name": "NBG",
+      "bic": "ETHNGRAA",
+      "logo": "assets/banks/greece_nbg.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/nbg/nbg-lite.png"
+    },
+    {
+      "id": null,
+      "name": "Eurobank Greece",
+      "bic": "ERBKGRAA",
+      "logo": "assets/banks/greece_eurobank_greece.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/eurobank/eurobank_logo.png"
+    },
+    {
+      "id": null,
+      "name": "PiraeusBank Greece",
+      "bic": "PIRBGRAA",
+      "logo": "assets/banks/greece_piraeusbank_greece.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/pireus/light.png"
+    },
+    {
+      "id": null,
+      "name": "Revolut Greece",
+      "bic": "REVOGB21",
+      "logo": "assets/banks/greece_revolut_greece.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/revolut/revolut.png"
+    },
+    {
+      "id": null,
+      "name": "Paysera",
+      "bic": "EVIULT2V",
+      "logo": "assets/banks/greece_paysera.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/paysera/paysera_new.png"
+    },
+    {
+      "id": null,
+      "name": "Curve UAB",
+      "bic": null,
+      "logo": "assets/banks/greece_curve_uab.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/curve/curve.png"
+    },
+    {
+      "id": null,
+      "name": "Crypto.com",
+      "bic": null,
+      "logo": "assets/banks/greece_crypto_com.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/crypto/crypto.png"
+    },
+    {
+      "id": null,
+      "name": "Ebury",
+      "bic": "EBURGB2L",
+      "logo": "assets/banks/greece_ebury.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/ebury/ebury.png"
+    },
+    {
+      "id": null,
+      "name": "PayPal",
+      "bic": null,
+      "logo": "assets/banks/greece_paypal.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/paypal/paypal.png"
+    },
+    {
+      "id": null,
+      "name": "Attica",
+      "bic": null,
+      "logo": "assets/banks/greece_attica.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/attica/attica.png"
+    }
+  ],
+  "croatia": [
+    {
+      "id": null,
+      "name": "Revolut",
+      "bic": "REVOGB21",
+      "logo": "assets/banks/croatia_revolut.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/revolut/revolut.png"
+    },
+    {
+      "id": null,
+      "name": "Zagrebacka Bank",
+      "bic": "ZABAHR2X",
+      "logo": "assets/banks/croatia_zagrebacka_bank.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/zagrebacka/zagrebacka.png"
+    },
+    {
+      "id": null,
+      "name": "Erste Croatia",
+      "bic": "ESBCHR22",
+      "logo": "assets/banks/croatia_erste_croatia.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/erste/erste-hr.png"
+    },
+    {
+      "id": null,
+      "name": "OTP Banka",
+      "bic": "OTPVHR2X",
+      "logo": "assets/banks/croatia_otp_banka.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/otp/otp.png"
+    },
+    {
+      "id": null,
+      "name": "PBZ",
+      "bic": null,
+      "logo": "assets/banks/croatia_pbz.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/pbz/pbz.png"
+    },
+    {
+      "id": null,
+      "name": "Raiffeisenbank Hrvarska",
+      "bic": "RZBHHR2X",
+      "logo": "assets/banks/croatia_raiffeisenbank_hrvarska.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/raiffeisen/normalized-raiffeisen-light@3x.png"
+    },
+    {
+      "id": null,
+      "name": "Ebury",
+      "bic": "EBURGB2L",
+      "logo": "assets/banks/croatia_ebury.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/ebury/ebury.png"
+    }
+  ],
+  "cyprus": [
+    {
+      "id": null,
+      "name": "Revolut",
+      "bic": "REVOGB21",
+      "logo": "assets/banks/cyprus_revolut.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/revolut/revolut.png"
+    },
+    {
+      "id": null,
+      "name": "Ebury",
+      "bic": "EBURGB2L",
+      "logo": "assets/banks/cyprus_ebury.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/ebury/ebury.png"
+    },
+    {
+      "id": null,
+      "name": "Bank Of Cyprus",
+      "bic": "BCYPCY2N",
+      "logo": "assets/banks/cyprus_bank_of_cyprus.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/boc/boc.png"
+    }
+  ],
+  "italy": [
+    {
+      "id": null,
+      "name": "Revolut",
+      "bic": "REVOGB21",
+      "logo": "assets/banks/italy_revolut.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/revolut/revolut.png"
+    },
+    {
+      "id": null,
+      "name": "Unicredit S.p.A.",
+      "bic": "UNCRITMM",
+      "logo": "assets/banks/italy_unicredit_s_p_a_.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/unicreditro/1280px-UniCredit.png"
+    },
+    {
+      "id": null,
+      "name": "Ebury",
+      "bic": "EBURGB2L",
+      "logo": "assets/banks/italy_ebury.png",
+      "remoteLogo": "https://developer.irispay.bg/assets/images/banks/ebury/ebury.png"
+    }
+  ]
+}

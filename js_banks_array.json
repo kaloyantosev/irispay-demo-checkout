@@ -1,0 +1,477 @@
+[
+  {
+    "id": "revolut",
+    "name": "Revolut",
+    "countries": [
+      "bg",
+      "hr",
+      "cy",
+      "it"
+    ],
+    "logo": "assets/banks/bulgaria_revolut.png",
+    "remoteLogo": "https://developer.irispay.bg/assets/images/banks/revolut/revolut.png"
+  },
+  {
+    "id": "unicredit_bulbank",
+    "name": "Unicredit Bulbank",
+    "countries": [
+      "bg"
+    ],
+    "logo": "assets/banks/bulgaria_unicredit_bulbank.png",
+    "remoteLogo": "https://developer.irispay.bg/assets/images/banks/bulbank/unicredit-light@3x.png"
+  },
+  {
+    "id": "dsk_bank",
+    "name": "DSK Bank",
+    "countries": [
+      "bg"
+    ],
+    "logo": "assets/banks/bulgaria_dsk_bank.png",
+    "remoteLogo": "https://developer.irispay.bg/assets/images/banks/dsk/dsk-light@3x.png"
+  },
+  {
+    "id": "ubb",
+    "name": "UBB",
+    "countries": [
+      "bg"
+    ],
+    "logo": "assets/banks/bulgaria_ubb.png",
+    "remoteLogo": "https://developer.irispay.bg/assets/images/banks/ubb/Ubb-light@3x.png"
+  },
+  {
+    "id": "postbank",
+    "name": "Postbank",
+    "countries": [
+      "bg"
+    ],
+    "logo": "assets/banks/bulgaria_postbank.png",
+    "remoteLogo": "https://developer.irispay.bg/assets/images/banks/postbank/postbank-cropped@3x.png"
+  },
+  {
+    "id": "pib",
+    "name": "PIB",
+    "countries": [
+      "bg"
+    ],
+    "logo": "assets/banks/bulgaria_pib.png",
+    "remoteLogo": "https://developer.irispay.bg/assets/images/banks/pib/fibank-logo-light@3x.png"
+  },
+  {
+    "id": "ccb",
+    "name": "CCB",
+    "countries": [
+      "bg"
+    ],
+    "logo": "assets/banks/bulgaria_ccb.png",
+    "remoteLogo": "https://developer.irispay.bg/assets/images/banks/ccb/ccb2.png"
+  },
+  {
+    "id": "invest_bank",
+    "name": "Invest Bank",
+    "countries": [
+      "bg"
+    ],
+    "logo": "assets/banks/bulgaria_invest_bank.png",
+    "remoteLogo": "https://developer.irispay.bg/assets/images/banks/invest/Ibank-light@3x.png"
+  },
+  {
+    "id": "texim_bank",
+    "name": "Texim Bank",
+    "countries": [
+      "bg"
+    ],
+    "logo": "assets/banks/bulgaria_texim_bank.png",
+    "remoteLogo": "https://developer.irispay.bg/assets/images/banks/texim/texim.png"
+  },
+  {
+    "id": "tbi_bank",
+    "name": "TBI Bank",
+    "countries": [
+      "bg"
+    ],
+    "logo": "assets/banks/bulgaria_tbi_bank.png",
+    "remoteLogo": "https://developer.irispay.bg/assets/images/banks/tbi/tbi-light.png"
+  },
+  {
+    "id": "bulgarian_developement_bank",
+    "name": "Bulgarian Developement Bank",
+    "countries": [
+      "bg"
+    ],
+    "logo": "assets/banks/bulgaria_bulgarian_developement_bank.png",
+    "remoteLogo": "https://developer.irispay.bg/assets/images/banks/bbr/bbr.png"
+  },
+  {
+    "id": "allianz_bank",
+    "name": "Allianz Bank",
+    "countries": [
+      "bg"
+    ],
+    "logo": "assets/banks/bulgaria_allianz_bank.png",
+    "remoteLogo": "https://developer.irispay.bg/assets/images/banks/allianz/Allianz-light@3x.png"
+  },
+  {
+    "id": "asset_international_bank",
+    "name": "Asset International Bank",
+    "countries": [
+      "bg"
+    ],
+    "logo": "assets/banks/bulgaria_asset_international_bank.png",
+    "remoteLogo": "https://developer.irispay.bg/assets/images/banks/asset/asset.png"
+  },
+  {
+    "id": "procredit",
+    "name": "Procredit",
+    "countries": [
+      "bg"
+    ],
+    "logo": "assets/banks/bulgaria_procredit.png",
+    "remoteLogo": "https://developer.irispay.bg/assets/images/banks/procredit/procredit-bank@3x.png"
+  },
+  {
+    "id": "dbank",
+    "name": "DBank",
+    "countries": [
+      "bg"
+    ],
+    "logo": "assets/banks/bulgaria_dbank.png",
+    "remoteLogo": "https://developer.irispay.bg/assets/images/banks/dbank/dbank-logo@3x.png"
+  },
+  {
+    "id": "bacb",
+    "name": "BACB",
+    "countries": [
+      "bg"
+    ],
+    "logo": "assets/banks/bulgaria_bacb.png",
+    "remoteLogo": "https://developer.irispay.bg/assets/images/banks/bacb/bacb.png"
+  },
+  {
+    "id": "paysera",
+    "name": "Paysera",
+    "countries": [
+      "bg",
+      "ro",
+      "gr"
+    ],
+    "logo": "assets/banks/bulgaria_paysera.png",
+    "remoteLogo": "https://developer.irispay.bg/assets/images/banks/paysera/paysera_new.png"
+  },
+  {
+    "id": "icard",
+    "name": "ICARD",
+    "countries": [
+      "bg"
+    ],
+    "logo": "assets/banks/bulgaria_icard.png",
+    "remoteLogo": "https://developer.irispay.bg/assets/images/banks/icard/icard.png"
+  },
+  {
+    "id": "easy_pay",
+    "name": "Easy Pay",
+    "countries": [
+      "bg"
+    ],
+    "logo": "assets/banks/bulgaria_easy_pay.png",
+    "remoteLogo": "https://developer.irispay.bg/assets/images/banks/easypay/easypay.png"
+  },
+  {
+    "id": "cryptocom",
+    "name": "Crypto.com",
+    "countries": [
+      "bg",
+      "ro",
+      "gr"
+    ],
+    "logo": "assets/banks/bulgaria_crypto_com.png",
+    "remoteLogo": "https://developer.irispay.bg/assets/images/banks/crypto/crypto.png"
+  },
+  {
+    "id": "curve_uab",
+    "name": "Curve UAB",
+    "countries": [
+      "bg",
+      "ro",
+      "gr"
+    ],
+    "logo": "assets/banks/bulgaria_curve_uab.png",
+    "remoteLogo": "https://developer.irispay.bg/assets/images/banks/curve/curve.png"
+  },
+  {
+    "id": "ebury",
+    "name": "Ebury",
+    "countries": [
+      "bg",
+      "ro",
+      "gr",
+      "hr",
+      "cy",
+      "it"
+    ],
+    "logo": "assets/banks/bulgaria_ebury.png",
+    "remoteLogo": "https://developer.irispay.bg/assets/images/banks/ebury/ebury.png"
+  },
+  {
+    "id": "paypal",
+    "name": "PayPal",
+    "countries": [
+      "bg",
+      "ro",
+      "gr"
+    ],
+    "logo": "assets/banks/bulgaria_paypal.png",
+    "remoteLogo": "https://developer.irispay.bg/assets/images/banks/paypal/paypal.png"
+  },
+  {
+    "id": "transcard",
+    "name": "Transcard",
+    "countries": [
+      "bg"
+    ],
+    "logo": "assets/banks/bulgaria_transcard.png",
+    "remoteLogo": "https://developer.irispay.bg/assets/images/banks/transcard/transcard.png"
+  },
+  {
+    "id": "ecoints",
+    "name": "Ecoints",
+    "countries": [
+      "bg"
+    ],
+    "logo": "assets/banks/bulgaria_ecoints.png",
+    "remoteLogo": "https://developer.irispay.bg/assets/images/banks/ecoints/ecoints.png"
+  },
+  {
+    "id": "revolut_romania",
+    "name": "Revolut Romania",
+    "countries": [
+      "ro"
+    ],
+    "logo": "assets/banks/romania_revolut_romania.png",
+    "remoteLogo": "https://developer.irispay.bg/assets/images/banks/revolut/revolut.png"
+  },
+  {
+    "id": "ing",
+    "name": "ING",
+    "countries": [
+      "ro"
+    ],
+    "logo": "assets/banks/romania_ing.png",
+    "remoteLogo": "https://developer.irispay.bg/assets/images/banks/ing/ng-group-bank.png"
+  },
+  {
+    "id": "brd_corporate",
+    "name": "BRD Corporate",
+    "countries": [
+      "ro"
+    ],
+    "logo": "assets/banks/romania_brd_corporate.png",
+    "remoteLogo": "https://developer.irispay.bg/assets/images/banks/brd/brd_corporate.png"
+  },
+  {
+    "id": "transilvania_bank_romania",
+    "name": "Transilvania Bank Romania",
+    "countries": [
+      "ro"
+    ],
+    "logo": "assets/banks/romania_transilvania_bank_romania.png",
+    "remoteLogo": "https://developer.irispay.bg/assets/images/banks/transilvania/bacatransilvania.png"
+  },
+  {
+    "id": "banca_comerciala_romana",
+    "name": "Banca Comerciala Romana",
+    "countries": [
+      "ro"
+    ],
+    "logo": "assets/banks/romania_banca_comerciala_romana.png",
+    "remoteLogo": "https://developer.irispay.bg/assets/images/banks/bcr/bcr.png"
+  },
+  {
+    "id": "unicredit_romania",
+    "name": "Unicredit Romania",
+    "countries": [
+      "ro"
+    ],
+    "logo": "assets/banks/romania_unicredit_romania.png",
+    "remoteLogo": "https://developer.irispay.bg/assets/images/banks/unicreditro/1280px-UniCredit.png"
+  },
+  {
+    "id": "raiffeisen_romania",
+    "name": "Raiffeisen Romania",
+    "countries": [
+      "ro"
+    ],
+    "logo": "assets/banks/romania_raiffeisen_romania.png",
+    "remoteLogo": "https://developer.irispay.bg/assets/images/banks/raiffeisen/raiffeisen-light@3x.png"
+  },
+  {
+    "id": "libra",
+    "name": "Libra",
+    "countries": [
+      "ro"
+    ],
+    "logo": "assets/banks/romania_libra.png",
+    "remoteLogo": "https://developer.irispay.bg/assets/images/banks/libra/libra-light.png"
+  },
+  {
+    "id": "cec",
+    "name": "CEC",
+    "countries": [
+      "ro"
+    ],
+    "logo": "assets/banks/romania_cec.png",
+    "remoteLogo": "https://developer.irispay.bg/assets/images/banks/cec/CEC_Bank.png"
+  },
+  {
+    "id": "exim_bank",
+    "name": "Exim Bank",
+    "countries": [
+      "ro"
+    ],
+    "logo": "assets/banks/romania_exim_bank.png",
+    "remoteLogo": "https://developer.irispay.bg/assets/images/banks/exim/exim.png"
+  },
+  {
+    "id": "vista",
+    "name": "Vista",
+    "countries": [
+      "ro"
+    ],
+    "logo": "assets/banks/romania_vista.svg",
+    "remoteLogo": "https://developer.irispay.bg/assets/images/banks/vista/vista.svg"
+  },
+  {
+    "id": "salt_bank",
+    "name": "Salt Bank",
+    "countries": [
+      "ro"
+    ],
+    "logo": "assets/banks/romania_salt_bank.png",
+    "remoteLogo": "https://developer.irispay.bg/assets/images/banks/saltbank/saltbank.png"
+  },
+  {
+    "id": "brd",
+    "name": "BRD",
+    "countries": [
+      "ro"
+    ],
+    "logo": "assets/banks/romania_brd.png",
+    "remoteLogo": "https://developer.irispay.bg/assets/images/banks/brd/brd.png"
+  },
+  {
+    "id": "alpha_bank_greece",
+    "name": "Alpha Bank Greece",
+    "countries": [
+      "gr"
+    ],
+    "logo": "assets/banks/greece_alpha_bank_greece.png",
+    "remoteLogo": "https://developer.irispay.bg/assets/images/banks/alpha/alpha.png"
+  },
+  {
+    "id": "nbg",
+    "name": "NBG",
+    "countries": [
+      "gr"
+    ],
+    "logo": "assets/banks/greece_nbg.png",
+    "remoteLogo": "https://developer.irispay.bg/assets/images/banks/nbg/nbg-lite.png"
+  },
+  {
+    "id": "eurobank_greece",
+    "name": "Eurobank Greece",
+    "countries": [
+      "gr"
+    ],
+    "logo": "assets/banks/greece_eurobank_greece.png",
+    "remoteLogo": "https://developer.irispay.bg/assets/images/banks/eurobank/eurobank_logo.png"
+  },
+  {
+    "id": "piraeusbank_greece",
+    "name": "PiraeusBank Greece",
+    "countries": [
+      "gr"
+    ],
+    "logo": "assets/banks/greece_piraeusbank_greece.png",
+    "remoteLogo": "https://developer.irispay.bg/assets/images/banks/pireus/light.png"
+  },
+  {
+    "id": "revolut_greece",
+    "name": "Revolut Greece",
+    "countries": [
+      "gr"
+    ],
+    "logo": "assets/banks/greece_revolut_greece.png",
+    "remoteLogo": "https://developer.irispay.bg/assets/images/banks/revolut/revolut.png"
+  },
+  {
+    "id": "attica",
+    "name": "Attica",
+    "countries": [
+      "gr"
+    ],
+    "logo": "assets/banks/greece_attica.png",
+    "remoteLogo": "https://developer.irispay.bg/assets/images/banks/attica/attica.png"
+  },
+  {
+    "id": "zagrebacka_bank",
+    "name": "Zagrebacka Bank",
+    "countries": [
+      "hr"
+    ],
+    "logo": "assets/banks/croatia_zagrebacka_bank.png",
+    "remoteLogo": "https://developer.irispay.bg/assets/images/banks/zagrebacka/zagrebacka.png"
+  },
+  {
+    "id": "erste_croatia",
+    "name": "Erste Croatia",
+    "countries": [
+      "hr"
+    ],
+    "logo": "assets/banks/croatia_erste_croatia.png",
+    "remoteLogo": "https://developer.irispay.bg/assets/images/banks/erste/erste-hr.png"
+  },
+  {
+    "id": "otp_banka",
+    "name": "OTP Banka",
+    "countries": [
+      "hr"
+    ],
+    "logo": "assets/banks/croatia_otp_banka.png",
+    "remoteLogo": "https://developer.irispay.bg/assets/images/banks/otp/otp.png"
+  },
+  {
+    "id": "pbz",
+    "name": "PBZ",
+    "countries": [
+      "hr"
+    ],
+    "logo": "assets/banks/croatia_pbz.png",
+    "remoteLogo": "https://developer.irispay.bg/assets/images/banks/pbz/pbz.png"
+  },
+  {
+    "id": "raiffeisenbank_hrvarska",
+    "name": "Raiffeisenbank Hrvarska",
+    "countries": [
+      "hr"
+    ],
+    "logo": "assets/banks/croatia_raiffeisenbank_hrvarska.png",
+    "remoteLogo": "https://developer.irispay.bg/assets/images/banks/raiffeisen/normalized-raiffeisen-light@3x.png"
+  },
+  {
+    "id": "bank_of_cyprus",
+    "name": "Bank Of Cyprus",
+    "countries": [
+      "cy"
+    ],
+    "logo": "assets/banks/cyprus_bank_of_cyprus.png",
+    "remoteLogo": "https://developer.irispay.bg/assets/images/banks/boc/boc.png"
+  },
+  {
+    "id": "unicredit_spa",
+    "name": "Unicredit S.p.A.",
+    "countries": [
+      "it"
+    ],
+    "logo": "assets/banks/italy_unicredit_s_p_a_.png",
+    "remoteLogo": "https://developer.irispay.bg/assets/images/banks/unicreditro/1280px-UniCredit.png"
+  }
+]
