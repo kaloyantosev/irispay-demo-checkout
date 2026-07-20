@@ -127,6 +127,7 @@ const banks = [
 // Complete 6-Language Translation Mappings (BG, EN, RO, HR, GR, IT)
 const translations = {
   bg: {
+    heroTitle: 'Умните бизнеси не чакат парите си',
     heroSubtitle: 'IRIS Pay прави приемането на плащания бързо, сигурно и с до 60% по-малко разходи. Ние създаваме бъдещето на дигиталните разплащания.',
     startNow: 'Започни сега',
     checkoutTitle: 'Изберете метод на плащане',
@@ -170,6 +171,7 @@ const translations = {
     totalLabel: 'Общо'
   },
   en: {
+    heroTitle: "Smart businesses don't wait for their money",
     heroSubtitle: 'IRIS Pay makes accepting payments fast, secure, and up to 60% less expensive. We build the future of digital payments.',
     startNow: 'Get Started',
     checkoutTitle: 'Choose Payment Method',
@@ -213,6 +215,7 @@ const translations = {
     totalLabel: 'Total'
   },
   ro: {
+    heroTitle: 'Afacerile inteligente nu își așteaptă banii',
     heroSubtitle: 'IRIS Pay face acceptarea plăților rapidă, sigură și cu până la 60% mai ieftină. Creăm viitorul plăților digitale.',
     startNow: 'Începe acum',
     checkoutTitle: 'Alegeți metoda de plată',
@@ -256,6 +259,7 @@ const translations = {
     totalLabel: 'Total'
   },
   hr: {
+    heroTitle: 'Pametne tvrtke ne čekaju svoj novac',
     heroSubtitle: 'IRIS Pay čini prihvaćanje plaćanja brzim, sigurnim i do 60% jeftinijim. Stvaramo budućnost digitalnih plaćanja.',
     startNow: 'Započni sada',
     checkoutTitle: 'Odaberite način plaćanja',
@@ -299,6 +303,7 @@ const translations = {
     totalLabel: 'Ukupno'
   },
   gr: {
+    heroTitle: 'Οι έξυπνες επιχειρήσεις δεν περιμένουν τα χρήματά τους',
     heroSubtitle: 'Το IRIS Pay κάνει την αποδοχή πληρωμών γρήγορη, ασφαλή και έως 60% φθηνότερη. Δημιουργούμε το μέλλον των ψηφιακών πληρωμών.',
     startNow: 'Ξεκινήστε τώρα',
     checkoutTitle: 'Επιλέξτε μέθοδο πληρωμής',
@@ -342,6 +347,7 @@ const translations = {
     totalLabel: 'Σύνολο'
   },
   it: {
+    heroTitle: 'Le aziende intelligenti non aspettano i propri soldi',
     heroSubtitle: 'IRIS Pay rende l\'accettazione dei pagamenti veloce, sicura e fino al 60% più economica. Creiamo il futuro dei pagamenti digitali.',
     startNow: 'Inizia ora',
     checkoutTitle: 'Scegli il metodo di pagamento',
@@ -709,7 +715,7 @@ function resetWidgetFlow() {
             <div class="method-card__details">
               <span class="method-card__name" data-t="methodTransfer">${translations[state.lang].methodTransfer}</span>
               <div class="method-card__icons">
-                <svg class="method-card__icon" viewBox="0 0 36 24" width="36" height="24"><rect width="36" height="24" rx="3" fill="#eceff1"/><path d="M18 6 L8 12 L28 12 Z M10 12 L10 18 M14 12 L14 18 M18 12 L18 18 M22 12 L22 18 M26 12 L26 18 M6 18 L30 18 L30 20 L6 20 Z" fill="#546e7a"/></svg>
+                <svg class="method-card__icon" viewBox="0 0 36 24" width="36" height="24"><rect width="36" height="24" rx="3" fill="#eceff1"/><path d="M18 6 L8 12 L28 12 Z M10 12 L10 18 M18 12 L18 18 M22 12 L22 18 M26 12 L26 18 M6 18 L30 18 L30 20 L6 20 Z" fill="#546e7a"/></svg>
               </div>
             </div>
           </div>
@@ -906,7 +912,7 @@ function initLanguageSelector() {
 function translatePage() {
   const t = translations[state.lang];
   
-  // Header menu or page elements
+  // Translate all elements with data-t attribute
   document.querySelectorAll('[data-t]').forEach(el => {
     const key = el.dataset.t;
     if (t[key]) {
