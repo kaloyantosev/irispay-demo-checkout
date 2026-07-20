@@ -154,7 +154,7 @@ const translations = {
     receiptAmount: 'Сума:',
     backHome: 'Ново плащане',
     bankPortalTitle: 'Потвърждение на плащането',
-    bankPortalDesc: 'Моля, потвърдете трансакцията към {merchant}.',
+    bankPortalDesc: 'Моля, потвърдете трансакцията към Iris Solutions.',
     bankPortalConfirm: 'Потвърди плащането',
     bankPortalCancel: 'Откажи плащането',
     merchantLabel: 'Търговец:',
@@ -181,12 +181,12 @@ const translations = {
     methodCod: 'Cash on Delivery',
     methodIris: 'Pay with IRIS Pay',
     alertMessage: 'This is a demo of IRIS Pay. Please select the payment method with the IRIS Pay logo to continue.',
-    title: 'Bank account country',
-    chooseBank: 'Select your bank',
+    title: 'Bank Account Country',
+    chooseBank: 'Select Your Bank',
     chooseBankSubtitle: 'When you choose your bank, you will be redirected to its application.',
-    selectedBank: 'Selected bank:',
+    selectedBank: 'Selected Bank:',
     selectOtherBank: 'Select another bank',
-    instructions: 'Please follow the instructions after you are redirected to the system of {bank}. By clicking the "Continue" button, you will initiate a payment from your selected payment service provider, in accordance with the parameters specified above.',
+    instructions: 'Please follow the instructions after you are redirected to the system of {bank}. By clicking the "Continue" button, you will initiate a payment from your selected payment service provider, in accordance with the parameters specified above. By the same action, you accept the <a href="#">General Terms</a>, <a href="#">Privacy Policy</a> and <a href="#">Campaign Rules</a> of Iris Solutions AD.',
     continue: 'Continue',
     sessionExpires: 'Session expires in:',
     successTitle: 'Payment Successful!',
@@ -198,7 +198,7 @@ const translations = {
     receiptAmount: 'Amount:',
     backHome: 'New Payment',
     bankPortalTitle: 'Payment Confirmation',
-    bankPortalDesc: 'Please confirm the transaction to {merchant}.',
+    bankPortalDesc: 'Please confirm the transaction to Iris Solutions.',
     bankPortalConfirm: 'Confirm Payment',
     bankPortalCancel: 'Cancel Payment',
     merchantLabel: 'Merchant:',
@@ -230,7 +230,7 @@ const translations = {
     chooseBankSubtitle: 'Când alegeți banca dvs., veți fi redirecționat către aplicația acesteia.',
     selectedBank: 'Banca selectată:',
     selectOtherBank: 'Alegeți altă bancă',
-    instructions: 'Vă rugăm să urmați instrucțiunile după ce sunteți redirecționat către sistemul {bank}. Făcând clic pe butonul "Continuați", veți iniția o plată de la furnizorul de servicii de plată selectat.',
+    instructions: 'Vă rugăm să urmați instrucțiunile după ce sunteți redirecționat către sistemul {bank}. Făcând clic pe butonul "Continuați", veți iniția o plată de la furnizorul dvs. de servicii de plată. Prin aceeași acțiune, acceptați <a href="#">Termenii generali</a> și <a href="#">Politica de confidențialitate</a>.',
     continue: 'Continuați',
     sessionExpires: 'Sesiunea expiră în:',
     successTitle: 'Plată reușită!',
@@ -242,7 +242,7 @@ const translations = {
     receiptAmount: 'Sumă:',
     backHome: 'Plată nouă',
     bankPortalTitle: 'Confirmare plată',
-    bankPortalDesc: 'Vă rugăm să confirmați tranzacția către {merchant}.',
+    bankPortalDesc: 'Vă rugăm să confirmați tranzacția către Iris Solutions.',
     bankPortalConfirm: 'Confirmă plata',
     bankPortalCancel: 'Anulează plata',
     merchantLabel: 'Comerciant:',
@@ -250,7 +250,7 @@ const translations = {
     description: 'Descriere:',
     date: 'Data:',
     storeHeader: 'Magazin Demo',
-    productTitle: 'Premium Navy Hoodie',
+    productTitle: 'Hanorac Premium Navy',
     productSize: 'Mărime: L',
     productQty: 'Cantitate: 1',
     subtotalLabel: 'Subtotal',
@@ -274,7 +274,7 @@ const translations = {
     chooseBankSubtitle: 'Kada odaberete svoju banku, bit ćete preusmjereni na njezinu aplikaciju.',
     selectedBank: 'Odabrana banka:',
     selectOtherBank: 'Odaberite drugu banku',
-    instructions: 'Molimo slijedite upute nakon što budete preusmjereni na sustav {bank}. Klikom na gumb "Nastavi" pokrenut ćete plaćanje od odabranog pružatelja usluga.',
+    instructions: 'Molimo slijedite upute nakon što budete preusmjereni na sustav {bank}. Klikom na gumb "Nastavi" pokrenut ćete plaćanje od odabranog pružatelja usluga. Istom radnjom prihvaćate <a href="#">Opće uvjete</a> i <a href="#">Pravila privatnosti</a>.',
     continue: 'Nastavi',
     sessionExpires: 'Sesija istječe za:',
     successTitle: 'Plaćanje uspješno!',
@@ -286,7 +286,7 @@ const translations = {
     receiptAmount: 'Iznos:',
     backHome: 'Novo plaćanje',
     bankPortalTitle: 'Potvrda plaćanja',
-    bankPortalDesc: 'Molimo potvrdite transakciju prema {merchant}.',
+    bankPortalDesc: 'Molimo potvrdite transakciju prema Iris Solutions.',
     bankPortalConfirm: 'Potvrdi plaćanje',
     bankPortalCancel: 'Otkaži plaćanje',
     merchantLabel: 'Trgovac:',
@@ -294,7 +294,7 @@ const translations = {
     description: 'Opis:',
     date: 'Datum:',
     storeHeader: 'Demo Trgovina',
-    productTitle: 'Premium Navy Hoodie',
+    productTitle: 'Premium Tamnoplava Majica s Kapuljačom',
     productSize: 'Veličina: L',
     productQty: 'Količina: 1',
     subtotalLabel: 'Međuzbroj',
@@ -318,7 +318,7 @@ const translations = {
     chooseBankSubtitle: 'Όταν επιλέξετε την τράπεζά σας, θα ανακατευθυνθείτε στην εφαρμογή της.',
     selectedBank: 'Επιλεγμένη τράπεζα:',
     selectOtherBank: 'Επιλέξτε άλλη τράπεζα',
-    instructions: 'Παρακαλώ ακολουθήστε τις οδηγίες αφού ανακατευθυνθείτε στο σύστημα της {bank}. Πατώντας το κουμπί "Συνέχεια", θα ξεκινήσετε μια πληρωμή.',
+    instructions: 'Παρακαλώ ακολουθήστε τις οδηγίες αφού ανακατευθυνθείτε στο σύστημα της {bank}. Πατώντας το κουμπί "Συνέχεια", θα ξεκινήσετε μια πληρωμή. Με την ίδια ενέργεια αποδέχεστε τους <a href="#">Γενικούς Όρους</a> και την <a href="#">Πολιτική Απορρήτου</a>.',
     continue: 'Συνέχεια',
     sessionExpires: 'Η συνεδρία λήγει σε:',
     successTitle: 'Η πληρωμή ολοκληρώθηκε!',
@@ -330,7 +330,7 @@ const translations = {
     receiptAmount: 'Ποσό:',
     backHome: 'Νέα πληρωμή',
     bankPortalTitle: 'Επιβεβαίωση πληρωμής',
-    bankPortalDesc: 'Παρακαλώ επιβεβαιώστε τη συναλλαγή προς {merchant}.',
+    bankPortalDesc: 'Παρακαλώ επιβεβαιώστε τη συναλλαγή προς Iris Solutions.',
     bankPortalConfirm: 'Επιβεβαίωση πληρωμής',
     bankPortalCancel: 'Ακύρωση πληρωμής',
     merchantLabel: 'Έμπορος:',
@@ -362,7 +362,7 @@ const translations = {
     chooseBankSubtitle: 'Quando scegli la tua banca, verrai reindirizzato alla sua applicazione.',
     selectedBank: 'Banca selezionata:',
     selectOtherBank: 'Seleziona un\'altra banca',
-    instructions: 'Segui le istruzioni dopo essere stato reindirizzato al sistema di {bank}. Cliccando sul pulsante "Continua", avvierai un pagamento.',
+    instructions: 'Segui le istruzioni dopo essere stato reindirizzato al sistema di {bank}. Cliccando sul pulsante "Continua", avvierai un pagamento. Con la stessa azione accetti i <a href="#">Termini Generali</a> e la <a href="#">Politica sulla Privacy</a>.',
     continue: 'Continua',
     sessionExpires: 'La sessione scade in:',
     successTitle: 'Pagamento riuscito!',
@@ -374,7 +374,7 @@ const translations = {
     receiptAmount: 'Importo:',
     backHome: 'Nuovo pagamento',
     bankPortalTitle: 'Conferma del pagamento',
-    bankPortalDesc: 'Conferma la transazione a {merchant}.',
+    bankPortalDesc: 'Conferma la transazione a Iris Solutions.',
     bankPortalConfirm: 'Conferma pagamento',
     bankPortalCancel: 'Annulla pagamento',
     merchantLabel: 'Esercente:',
@@ -382,7 +382,7 @@ const translations = {
     description: 'Descrizione:',
     date: 'Data:',
     storeHeader: 'Negozio Demo',
-    productTitle: 'Premium Navy Hoodie',
+    productTitle: 'Felpa con Cappuccio Navy Premium',
     productSize: 'Taglia: L',
     productQty: 'Quantità: 1',
     subtotalLabel: 'Subtotale',
@@ -653,33 +653,33 @@ function showSuccessPage() {
             <polyline points="20 6 9 17 4 12"></polyline>
           </svg>
         </div>
-        <h2 class="success-title">${translations[state.lang].successTitle}</h2>
-        <p class="success-desc">${translations[state.lang].successDesc}</p>
+        <h2 class="success-title" data-t="successTitle">${translations[state.lang].successTitle}</h2>
+        <p class="success-desc" data-t="successDesc">${translations[state.lang].successDesc}</p>
         
         <div class="receipt-box">
           <div class="receipt-row">
-            <span class="receipt-label">${translations[state.lang].receiptMerchant}</span>
+            <span class="receipt-label" data-t="receiptMerchant">${translations[state.lang].receiptMerchant}</span>
             <span class="receipt-value">${state.merchantName}</span>
           </div>
           <div class="receipt-row">
-            <span class="receipt-label">${translations[state.lang].receiptBank}</span>
+            <span class="receipt-label" data-t="receiptBank">${translations[state.lang].receiptBank}</span>
             <span class="receipt-value">${state.selectedBank.name}</span>
           </div>
           <div class="receipt-row">
-            <span class="receipt-label">${translations[state.lang].receiptDate}</span>
+            <span class="receipt-label" data-t="receiptDate">${translations[state.lang].receiptDate}</span>
             <span class="receipt-value">${state.paymentDate}</span>
           </div>
           <div class="receipt-row">
-            <span class="receipt-label">${translations[state.lang].receiptRef}</span>
+            <span class="receipt-label" data-t="receiptRef">${translations[state.lang].receiptRef}</span>
             <span class="receipt-value">${refNum}</span>
           </div>
           <div class="receipt-row">
-            <span class="receipt-label">${translations[state.lang].receiptAmount}</span>
+            <span class="receipt-label" data-t="receiptAmount">${translations[state.lang].receiptAmount}</span>
             <span class="receipt-value">${state.amount.toFixed(2)} ${state.currency}</span>
           </div>
         </div>
         
-        <button id="btn-success-reset" class="btn btn--cyan" style="border-radius: 2rem; padding: 0.65rem 2.2rem; font-size: 0.9rem;">
+        <button id="btn-success-reset" class="btn btn--cyan" style="border-radius: 2rem; padding: 0.65rem 2.2rem; font-size: 0.9rem;" data-t="backHome">
           ${translations[state.lang].backHome}
         </button>
       </div>
@@ -715,7 +715,7 @@ function resetWidgetFlow() {
             <div class="method-card__details">
               <span class="method-card__name" data-t="methodTransfer">${translations[state.lang].methodTransfer}</span>
               <div class="method-card__icons">
-                <svg class="method-card__icon" viewBox="0 0 36 24" width="36" height="24"><rect width="36" height="24" rx="3" fill="#eceff1"/><path d="M18 6 L8 12 L28 12 Z M10 12 L10 18 M18 12 L18 18 M22 12 L22 18 M26 12 L26 18 M6 18 L30 18 L30 20 L6 20 Z" fill="#546e7a"/></svg>
+                <svg class="method-card__icon" viewBox="0 0 36 24" width="36" height="24"><rect width="36" height="24" rx="3" fill="#eceff1"/><path d="M18 6 L8 12 L28 12 Z M10 12 L10 18 M14 12 L14 18 M18 12 L18 18 M22 12 L22 18 M26 12 L26 18 M6 18 L30 18 L30 20 L6 20 Z" fill="#546e7a"/></svg>
               </div>
             </div>
           </div>
@@ -792,8 +792,8 @@ function resetWidgetFlow() {
       <div id="view-bank-portal" class="bank-portal-inline" style="display: none;">
         <div class="bank-portal-inline__logo" id="portal-bank-logo-container"></div>
         <h2 class="bank-portal-inline__title" data-t="bankPortalTitle">${translations[state.lang].bankPortalTitle}</h2>
-        <p class="bank-portal-inline__desc" id="portal-desc-text">
-          Моля, потвърдете трансакцията към <span id="portal-desc-merchant">Iris Solutions</span>.
+        <p class="bank-portal-inline__desc" id="portal-desc-text" data-t="bankPortalDesc">
+          ${translations[state.lang].bankPortalDesc}
         </p>
         
         <div class="bank-portal-inline__info-box">
@@ -815,8 +815,8 @@ function resetWidgetFlow() {
           </div>
         </div>
         
-        <button id="portal-btn-confirm" class="btn btn--portal-confirm">${translations[state.lang].bankPortalConfirm}</button>
-        <button id="portal-btn-cancel" class="btn btn--portal-cancel">${translations[state.lang].bankPortalCancel}</button>
+        <button id="portal-btn-confirm" class="btn btn--portal-confirm" data-t="bankPortalConfirm">${translations[state.lang].bankPortalConfirm}</button>
+        <button id="portal-btn-cancel" class="btn btn--portal-cancel" data-t="bankPortalCancel">${translations[state.lang].bankPortalCancel}</button>
       </div>
     `;
 
@@ -908,7 +908,7 @@ function initLanguageSelector() {
   });
 }
 
-// Page translation handler
+// Page translation handler (Comprehensive - 100% translation coverage)
 function translatePage() {
   const t = translations[state.lang];
   
@@ -930,5 +930,11 @@ function translatePage() {
     
     const bankNameElements = document.querySelectorAll('.dynamic-bank-name');
     bankNameElements.forEach(el => el.textContent = state.selectedBank.name);
+  }
+
+  // Update alert box if displayed
+  const alertBox = document.getElementById('checkout-alert');
+  if (alertBox && alertBox.style.display !== 'none') {
+    alertBox.textContent = t.alertMessage;
   }
 }
