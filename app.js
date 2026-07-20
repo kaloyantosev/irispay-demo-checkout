@@ -10,7 +10,7 @@ const state = {
   amount: 30.00, // Updated price: 30 EUR
   currency: 'EUR',
   merchantName: 'Iris Solutions',
-  paymentDescription: 'IRIS-1042: Premium Navy Hoodie', // Updated description
+  paymentDescription: 'IRIS-1042: Premium Navy Hoodie',
   paymentDate: ''
 };
 
@@ -124,9 +124,11 @@ const banks = [
   }
 ];
 
-// Translations mapping (Updated with missing description & date keys to fix undefined)
+// Complete 6-Language Translation Mappings (BG, EN, RO, HR, GR, IT)
 const translations = {
   bg: {
+    heroSubtitle: 'IRIS Pay прави приемането на плащания бързо, сигурно и с до 60% по-малко разходи. Ние създаваме бъдещето на дигиталните разплащания.',
+    startNow: 'Започни сега',
     checkoutTitle: 'Изберете метод на плащане',
     checkoutSubtitle: 'Моля, изберете предпочитания начин за плащане на Вашата поръчка.',
     methodCard: 'Плащане с карта',
@@ -141,7 +143,6 @@ const translations = {
     selectOtherBank: 'Изберете друга банка',
     instructions: 'Моля, следвайте инструкциите след като бъдете пренасочени към системата на {bank}. Чрез натискането на бутона "Продължи" ще инициирате плащане от избрания от Вас доставчик на платежни услуги, съгласно параметрите посочени по-горе. Със същото действие приемате <a href="#">Общите условия</a>, <a href="#">Политиката за поверителност</a> и <a href="#">Правилата на действащата промоционална кампания</a> на Айрис Солюшънс АД.',
     continue: 'Продължи',
-    licence: 'Айрис Солюшънс АД с ЕИК 208455895 е лицензирана платежна институция с решение на БНБ №316 от 17.09.2019г. за предоставяне на платежни услуги по чл.4 т.7 и т.8 от ЗПУПС – иницииране на плащане и доставка на информация по сметка',
     sessionExpires: 'Сесията ще изтече след:',
     successTitle: 'Плащането е успешно!',
     successDesc: 'Вашата трансакция беше инициирана и потвърдена успешно през Вашата банкова сметка.',
@@ -157,8 +158,8 @@ const translations = {
     bankPortalCancel: 'Откажи плащането',
     merchantLabel: 'Търговец:',
     amountLabel: 'Сума:',
-    description: 'Описание:', // Added key
-    date: 'Дата:', // Added key
+    description: 'Описание:',
+    date: 'Дата:',
     storeHeader: 'Тестов магазин',
     productTitle: 'Premium Navy Hoodie',
     productSize: 'Размер: L',
@@ -169,6 +170,8 @@ const translations = {
     totalLabel: 'Общо'
   },
   en: {
+    heroSubtitle: 'IRIS Pay makes accepting payments fast, secure, and up to 60% less expensive. We build the future of digital payments.',
+    startNow: 'Get Started',
     checkoutTitle: 'Choose Payment Method',
     checkoutSubtitle: 'Please select your preferred payment method to complete the order.',
     methodCard: 'Card Payment',
@@ -181,9 +184,8 @@ const translations = {
     chooseBankSubtitle: 'When you choose your bank, you will be redirected to its application.',
     selectedBank: 'Selected bank:',
     selectOtherBank: 'Select another bank',
-    instructions: 'Please follow the instructions after you are redirected to the system of {bank}. By clicking the "Continue" button, you will initiate a payment from your selected payment service provider, in accordance with the parameters specified above. By the same action, you accept the <a href="#">General Terms</a>, <a href="#">Privacy Policy</a> and <a href="#">Rules of the active promotional campaign</a> of Iris Solutions AD.',
+    instructions: 'Please follow the instructions after you are redirected to the system of {bank}. By clicking the "Continue" button, you will initiate a payment from your selected payment service provider, in accordance with the parameters specified above.',
     continue: 'Continue',
-    licence: 'Iris Solutions AD, UIC 208455895, is a licensed payment institution by BNB Decision No. 316 of 17.09.2019 for the provision of payment services under Art. 4, item 7 and item 8 of PSD - payment initiation and account information services',
     sessionExpires: 'Session expires in:',
     successTitle: 'Payment Successful!',
     successDesc: 'Your transaction was successfully initiated and confirmed through your bank account.',
@@ -199,8 +201,8 @@ const translations = {
     bankPortalCancel: 'Cancel Payment',
     merchantLabel: 'Merchant:',
     amountLabel: 'Amount:',
-    description: 'Description:', // Added key
-    date: 'Date:', // Added key
+    description: 'Description:',
+    date: 'Date:',
     storeHeader: 'Demo Store',
     productTitle: 'Premium Navy Hoodie',
     productSize: 'Size: L',
@@ -211,6 +213,8 @@ const translations = {
     totalLabel: 'Total'
   },
   ro: {
+    heroSubtitle: 'IRIS Pay face acceptarea plăților rapidă, sigură și cu până la 60% mai ieftină. Creăm viitorul plăților digitale.',
+    startNow: 'Începe acum',
     checkoutTitle: 'Alegeți metoda de plată',
     checkoutSubtitle: 'Vă rugăm să selectați metoda de plată preferată pentru a finaliza comanda.',
     methodCard: 'Plată cu card',
@@ -223,9 +227,8 @@ const translations = {
     chooseBankSubtitle: 'Când alegeți banca dvs., veți fi redirecționat către aplicația acesteia.',
     selectedBank: 'Banca selectată:',
     selectOtherBank: 'Alegeți altă bancă',
-    instructions: 'Vă rugăm să urmați instrucțiunile după ce sunteți redirecționat către sistemul {bank}. Făcând clic pe butonul "Continuați", veți iniția o plată de la furnizorul de servicii de plată selectat, în conformitate cu parametrii specificați mai sus. Prin aceeași acțiune, acceptați <a href="#">Termenii generali</a>, <a href="#">Politica de confidențialitate</a> și <a href="#">Regulile campaniei promoționale active</a> ale Iris Solutions AD.',
+    instructions: 'Vă rugăm să urmați instrucțiunile după ce sunteți redirecționat către sistemul {bank}. Făcând clic pe butonul "Continuați", veți iniția o plată de la furnizorul de servicii de plată selectat.',
     continue: 'Continuați',
-    licence: 'Iris Solutions AD, UIC 208455895, este o instituție de plată licențiată prin Decizia BNB nr. 316 din 17.09.2019 pentru furnizarea de servicii de plată în conformitate cu art. 4, pct. 7 și pct. 8 din PSD - servicii de inițiere a plății și de informații privind conturile',
     sessionExpires: 'Sesiunea expiră în:',
     successTitle: 'Plată reușită!',
     successDesc: 'Tranzacția dvs. a fost inițiată și confirmată cu succes prin contul dvs. bancar.',
@@ -241,8 +244,8 @@ const translations = {
     bankPortalCancel: 'Anulează plata',
     merchantLabel: 'Comerciant:',
     amountLabel: 'Sumă:',
-    description: 'Descriere:', // Added key
-    date: 'Data:', // Added key
+    description: 'Descriere:',
+    date: 'Data:',
     storeHeader: 'Magazin Demo',
     productTitle: 'Premium Navy Hoodie',
     productSize: 'Mărime: L',
@@ -251,6 +254,135 @@ const translations = {
     shippingLabel: 'Livrare',
     shippingVal: 'Gratuită',
     totalLabel: 'Total'
+  },
+  hr: {
+    heroSubtitle: 'IRIS Pay čini prihvaćanje plaćanja brzim, sigurnim i do 60% jeftinijim. Stvaramo budućnost digitalnih plaćanja.',
+    startNow: 'Započni sada',
+    checkoutTitle: 'Odaberite način plaćanja',
+    checkoutSubtitle: 'Molimo odaberite željeni način plaćanja za vašu narudžbu.',
+    methodCard: 'Plaćanje karticom',
+    methodTransfer: 'Bankovni prijenos',
+    methodCod: 'Plaćanje pouzećem',
+    methodIris: 'Plati putem IRIS Pay',
+    alertMessage: 'Ovo je demonstracija IRIS Pay-a. Odaberite način plaćanja s logotipom IRIS Pay za nastavak.',
+    title: 'Država bankovnog računa',
+    chooseBank: 'Odaberite svoju banku',
+    chooseBankSubtitle: 'Kada odaberete svoju banku, bit ćete preusmjereni na njezinu aplikaciju.',
+    selectedBank: 'Odabrana banka:',
+    selectOtherBank: 'Odaberite drugu banku',
+    instructions: 'Molimo slijedite upute nakon što budete preusmjereni na sustav {bank}. Klikom na gumb "Nastavi" pokrenut ćete plaćanje od odabranog pružatelja usluga.',
+    continue: 'Nastavi',
+    sessionExpires: 'Sesija istječe za:',
+    successTitle: 'Plaćanje uspješno!',
+    successDesc: 'Vaša transakcija je uspješno pokrenuta i potvrđena putem vašeg bankovnog računa.',
+    receiptMerchant: 'Trgovac:',
+    receiptBank: 'Banka:',
+    receiptDate: 'Datum:',
+    receiptRef: 'Referentni br:',
+    receiptAmount: 'Iznos:',
+    backHome: 'Novo plaćanje',
+    bankPortalTitle: 'Potvrda plaćanja',
+    bankPortalDesc: 'Molimo potvrdite transakciju prema {merchant}.',
+    bankPortalConfirm: 'Potvrdi plaćanje',
+    bankPortalCancel: 'Otkaži plaćanje',
+    merchantLabel: 'Trgovac:',
+    amountLabel: 'Iznos:',
+    description: 'Opis:',
+    date: 'Datum:',
+    storeHeader: 'Demo Trgovina',
+    productTitle: 'Premium Navy Hoodie',
+    productSize: 'Veličina: L',
+    productQty: 'Količina: 1',
+    subtotalLabel: 'Međuzbroj',
+    shippingLabel: 'Dostava',
+    shippingVal: 'Besplatna',
+    totalLabel: 'Ukupno'
+  },
+  gr: {
+    heroSubtitle: 'Το IRIS Pay κάνει την αποδοχή πληρωμών γρήγορη, ασφαλή και έως 60% φθηνότερη. Δημιουργούμε το μέλλον των ψηφιακών πληρωμών.',
+    startNow: 'Ξεκινήστε τώρα',
+    checkoutTitle: 'Επιλέξτε μέθοδο πληρωμής',
+    checkoutSubtitle: 'Παρακαλώ επιλέξτε την προτιμώμενη μέθοδο πληρωμής για την παραγγελία σας.',
+    methodCard: 'Πληρωμή με κάρτα',
+    methodTransfer: 'Τραπεζική μεταφορά',
+    methodCod: 'Αντικαταβολή',
+    methodIris: 'Πληρωμή με IRIS Pay',
+    alertMessage: 'Αυτή είναι μια επίδειξη του IRIS Pay. Επιλέξτε τη μέθοδο πληρωμής με το λογότυπο IRIS Pay για να συνεχίσετε.',
+    title: 'Χώρα τραπεζικού λογαριασμού',
+    chooseBank: 'Επιλέξτε την τράπεζά σας',
+    chooseBankSubtitle: 'Όταν επιλέξετε την τράπεζά σας, θα ανακατευθυνθείτε στην εφαρμογή της.',
+    selectedBank: 'Επιλεγμένη τράπεζα:',
+    selectOtherBank: 'Επιλέξτε άλλη τράπεζα',
+    instructions: 'Παρακαλώ ακολουθήστε τις οδηγίες αφού ανακατευθυνθείτε στο σύστημα της {bank}. Πατώντας το κουμπί "Συνέχεια", θα ξεκινήσετε μια πληρωμή.',
+    continue: 'Συνέχεια',
+    sessionExpires: 'Η συνεδρία λήγει σε:',
+    successTitle: 'Η πληρωμή ολοκληρώθηκε!',
+    successDesc: 'Η συναλλαγή σας ξεκίνησε και επιβεβαιώθηκε με επιτυχία μέσω του τραπεζικού σας λογαριασμού.',
+    receiptMerchant: 'Έμπορος:',
+    receiptBank: 'Τράπεζα:',
+    receiptDate: 'Ημερομηνία:',
+    receiptRef: 'Αριθμός αναφοράς:',
+    receiptAmount: 'Ποσό:',
+    backHome: 'Νέα πληρωμή',
+    bankPortalTitle: 'Επιβεβαίωση πληρωμής',
+    bankPortalDesc: 'Παρακαλώ επιβεβαιώστε τη συναλλαγή προς {merchant}.',
+    bankPortalConfirm: 'Επιβεβαίωση πληρωμής',
+    bankPortalCancel: 'Ακύρωση πληρωμής',
+    merchantLabel: 'Έμπορος:',
+    amountLabel: 'Ποσό:',
+    description: 'Περιγραφή:',
+    date: 'Ημερομηνία:',
+    storeHeader: 'Demo Κατάστημα',
+    productTitle: 'Premium Navy Hoodie',
+    productSize: 'Μέγεθος: L',
+    productQty: 'Ποσότητα: 1',
+    subtotalLabel: 'Μερικό σύνολο',
+    shippingLabel: 'Αποστολή',
+    shippingVal: 'Δωρεάν',
+    totalLabel: 'Σύνολο'
+  },
+  it: {
+    heroSubtitle: 'IRIS Pay rende l\'accettazione dei pagamenti veloce, sicura e fino al 60% più economica. Creiamo il futuro dei pagamenti digitali.',
+    startNow: 'Inizia ora',
+    checkoutTitle: 'Scegli il metodo di pagamento',
+    checkoutSubtitle: 'Seleziona il metodo di pagamento preferito per completare l\'ordine.',
+    methodCard: 'Pagamento con carta',
+    methodTransfer: 'Bonifico bancario',
+    methodCod: 'Contrassegno',
+    methodIris: 'Paga con IRIS Pay',
+    alertMessage: 'Questa è una demo di IRIS Pay. Seleziona il metodo di pagamento con il logo IRIS Pay per continuare.',
+    title: 'Paese del conto bancario',
+    chooseBank: 'Seleziona la tua banca',
+    chooseBankSubtitle: 'Quando scegli la tua banca, verrai reindirizzato alla sua applicazione.',
+    selectedBank: 'Banca selezionata:',
+    selectOtherBank: 'Seleziona un\'altra banca',
+    instructions: 'Segui le istruzioni dopo essere stato reindirizzato al sistema di {bank}. Cliccando sul pulsante "Continua", avvierai un pagamento.',
+    continue: 'Continua',
+    sessionExpires: 'La sessione scade in:',
+    successTitle: 'Pagamento riuscito!',
+    successDesc: 'La tua transazione è stata avviata e confermata con successo tramite il tuo conto bancario.',
+    receiptMerchant: 'Esercente:',
+    receiptBank: 'Banca:',
+    receiptDate: 'Data:',
+    receiptRef: 'N. di riferimento:',
+    receiptAmount: 'Importo:',
+    backHome: 'Nuovo pagamento',
+    bankPortalTitle: 'Conferma del pagamento',
+    bankPortalDesc: 'Conferma la transazione a {merchant}.',
+    bankPortalConfirm: 'Conferma pagamento',
+    bankPortalCancel: 'Annulla pagamento',
+    merchantLabel: 'Esercente:',
+    amountLabel: 'Importo:',
+    description: 'Descrizione:',
+    date: 'Data:',
+    storeHeader: 'Negozio Demo',
+    productTitle: 'Premium Navy Hoodie',
+    productSize: 'Taglia: L',
+    productQty: 'Quantità: 1',
+    subtotalLabel: 'Subtotale',
+    shippingLabel: 'Spedizione',
+    shippingVal: 'Gratuita',
+    totalLabel: 'Totale'
   }
 };
 
@@ -258,9 +390,6 @@ const translations = {
 document.addEventListener('DOMContentLoaded', () => {
   // Update Live Date
   updateLiveDate();
-
-  // Header Scroll Effect
-  initHeader();
 
   // Language Dropdown Setup
   initLanguageSelector();
@@ -544,7 +673,7 @@ function showSuccessPage() {
           </div>
         </div>
         
-        <button id="btn-success-reset" class="btn btn--blue" style="border-radius: 2rem; padding: 0.65rem 2.2rem; font-size: 0.9rem;">
+        <button id="btn-success-reset" class="btn btn--cyan" style="border-radius: 2rem; padding: 0.65rem 2.2rem; font-size: 0.9rem;">
           ${translations[state.lang].backHome}
         </button>
       </div>
@@ -556,7 +685,6 @@ function showSuccessPage() {
 
 // Reset entire flow back to checkout selection
 function resetWidgetFlow() {
-  // Re-render original checkout select view in widget content
   const widgetContent = document.getElementById('widget-content-body');
   if (widgetContent) {
     widgetContent.innerHTML = `
@@ -608,7 +736,7 @@ function resetWidgetFlow() {
         <!-- Guidance Alert Box -->
         <div class="checkout-alert" id="checkout-alert"></div>
         
-        <button class="btn btn--orange btn--full" id="btn-checkout-next" style="margin-top: 1rem; border-radius: 2rem; width: 100%;">
+        <button class="btn btn--cyan" id="btn-checkout-next" style="margin-top: 1rem; border-radius: 2rem; width: 100%;">
           <span data-t="continue">${translations[state.lang].continue}</span>
         </button>
       </div>
@@ -642,7 +770,7 @@ function resetWidgetFlow() {
         <div class="selected-bank-instructions" id="instructions-text"></div>
         
         <div class="selected-bank-actions">
-          <button class="btn btn--orange btn--widget-continue" id="btn-continue-widget">
+          <button class="btn btn--widget-continue" id="btn-continue-widget">
             <span data-t="continue">${translations[state.lang].continue}</span>
           </button>
           <button class="btn--circle-arrow-widget" id="btn-continue-circle-widget">
@@ -741,21 +869,7 @@ function stopTimer() {
   clearInterval(state.timerInterval);
 }
 
-// Header Scroll styling
-function initHeader() {
-  const header = document.querySelector('.header');
-  if (!header) return;
-
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-      header.classList.add('header--scrolled');
-    } else {
-      header.classList.remove('header--scrolled');
-    }
-  });
-}
-
-// Language Selector dropdown
+// Language Selector dropdown supporting 6 languages (BG, EN, RO, HR, GR, IT)
 function initLanguageSelector() {
   const btn = document.getElementById('language-toggle');
   const dropdown = document.getElementById('language-dropdown');

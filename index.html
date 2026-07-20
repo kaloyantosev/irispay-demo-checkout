@@ -11,42 +11,25 @@
 </head>
 <body>
 
-  <!-- Header -->
-  <header class="header" id="main-header">
-    <a href="index.html" class="header__logo-link" id="logo-home">
-      <img src="iris-logo.svg" alt="IRIS Pay Logo" class="header__logo">
-    </a>
-    
-    <nav class="header__nav">
-      <ul class="header__menu">
-        <li class="header__menu-item"><a href="#" class="header__menu-link header__menu-link--active">Бизнес</a></li>
-        <li class="header__menu-item"><a href="#" class="header__menu-link">Физически лица</a></li>
-        <li class="header__menu-item"><a href="#" class="header__menu-link">Продукти</a></li>
-        <li class="header__menu-item"><a href="#" class="header__menu-link">Цени</a></li>
-        <li class="header__menu-item"><a href="#" class="header__menu-link">За нас</a></li>
-        <li class="header__menu-item"><a href="#" class="header__menu-link">Контакти</a></li>
+  <!-- Floating Top-Right 6-Language Switcher (BG, EN, RO, HR, GR, IT) -->
+  <div class="floating-lang-selector" id="lang-selector">
+    <div class="language-selector">
+      <button class="language-btn" id="language-toggle">
+        <span id="current-lang-text">BG</span>
+        <svg viewBox="0 0 10 6">
+          <path d="M1 1L5 5L9 1"/>
+        </svg>
+      </button>
+      <ul class="language-dropdown" id="language-dropdown">
+        <li class="language-item" data-lang="bg"><a href="#">🇧🇬 Български (BG)</a></li>
+        <li class="language-item" data-lang="en"><a href="#">🇬🇧 English (EN)</a></li>
+        <li class="language-item" data-lang="ro"><a href="#">🇷🇴 Română (RO)</a></li>
+        <li class="language-item" data-lang="hr"><a href="#">🇭🇷 Hrvatski (HR)</a></li>
+        <li class="language-item" data-lang="gr"><a href="#">🇬🇷 Ελληνικά (GR)</a></li>
+        <li class="language-item" data-lang="it"><a href="#">🇮🇹 Italiano (IT)</a></li>
       </ul>
-      
-      <div class="header__right">
-        <a href="#" class="btn btn--white" style="padding: 0.5rem 1.25rem; font-size: 0.85rem;" id="login-button">Вход</a>
-        <a href="#" class="btn btn--blue" style="padding: 0.5rem 1.25rem; font-size: 0.85rem;" id="register-button">Регистрирай се</a>
-        
-        <div class="language-selector" id="lang-selector">
-          <button class="language-btn" id="language-toggle">
-            <span id="current-lang-text">BG</span>
-            <svg viewBox="0 0 10 6">
-              <path d="M1 1L5 5L9 1"/>
-            </svg>
-          </button>
-          <ul class="language-dropdown" id="language-dropdown">
-            <li class="language-item" data-lang="bg"><a href="#">BG</a></li>
-            <li class="language-item" data-lang="en"><a href="#">EN</a></li>
-            <li class="language-item" data-lang="ro"><a href="#">RO</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
+    </div>
+  </div>
 
   <!-- Hero Section -->
   <main class="hero" id="hero-section">
@@ -55,23 +38,20 @@
       <div class="hero__content">
         <img src="iris-logo.svg" alt="IRIS Logo Big" class="hero__logo">
         <h1 class="hero__title">Умните бизнеси не чакат парите си</h1>
-        <p class="hero__description">
+        <p class="hero__description" data-t="heroSubtitle">
           IRIS Pay прави приемането на плащания бързо, сигурно и с до 60% по-малко разходи. 
-          Ние създаваме бъдещето на дигиталните разплащания чрез силата на отвореното банкиране.
+          Ние създаваме бъдещето на дигиталните разплащания.
         </p>
         <div class="hero__actions">
-          <a href="#demo-widget-section" class="btn btn--orange" style="font-size: 1.1rem; padding: 1rem 2.5rem; border-radius: 2rem;" id="scroll-to-demo-btn">
-            Тествай демо плащане
+          <a href="https://irispay.eu/bg/register" target="_blank" class="btn btn--cyan" id="start-now-btn" data-t="startNow">
+            Започни сега
           </a>
-          <a href="#" class="btn btn--white" style="font-size: 1.1rem; padding: 1rem 2.5rem; border-radius: 2rem;" id="learn-more-btn">Започни сега</a>
         </div>
       </div>
       
       <!-- Right Column: Interactive Embedded Widget -->
       <div class="demo-widget-column" id="demo-widget-section">
-        <h2 class="widget-header-title">Тествай сам</h2>
-        
-        <!-- Widened payment widget layout -->
+        <!-- Widened payment widget layout (920px max-width) -->
         <div class="payment-widget">
           
           <!-- E-Commerce Left Panel Sidebar -->
@@ -197,7 +177,7 @@
                 <!-- Guidance Alert Box -->
                 <div class="checkout-alert" id="checkout-alert"></div>
                 
-                <button class="btn btn--orange" id="btn-checkout-next" style="margin-top: 1rem; border-radius: 2rem; width: 100%;">
+                <button class="btn btn--cyan" id="btn-checkout-next" style="margin-top: 1rem; border-radius: 2rem; width: 100%;">
                   <span data-t="continue">Продължи</span>
                 </button>
               </div>
@@ -237,7 +217,7 @@
                 </div>
                 
                 <div class="selected-bank-actions">
-                  <button class="btn btn--orange btn--widget-continue" id="btn-continue-widget">
+                  <button class="btn btn--widget-continue" id="btn-continue-widget">
                     <span data-t="continue">Продължи</span>
                   </button>
                   <button class="btn--circle-arrow-widget" id="btn-continue-circle-widget">
@@ -288,18 +268,6 @@
     </div>
   </main>
 
-  <!-- Disclaimer Footer -->
-  <footer class="checkout-footer" id="checkout-footer" data-t="licence">
-    Айрис Солюшънс АД с ЕИК 208455895 е лицензирана платежна институция с решение на БНБ №316 от 17.09.2019г. за предоставяне на платежни услуги по чл.4 т.7 и т.8 от ЗПУПС – иницииране на плащане и доставка на информация по сметка
-  </footer>
-
   <script src="app.js"></script>
-  <script>
-    // Smooth scroll to demo widget section when clicking "Тествай демо плащане" button
-    document.getElementById('scroll-to-demo-btn').addEventListener('click', (e) => {
-      e.preventDefault();
-      document.getElementById('demo-widget-section').scrollIntoView({ behavior: 'smooth' });
-    });
-  </script>
 </body>
 </html>
