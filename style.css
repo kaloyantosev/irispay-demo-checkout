@@ -174,10 +174,10 @@ a:hover {
 .btn--cyan {
   background-color: var(--color-cyan);
   color: #ffffff;
-  padding: 0.9rem 2.5rem;
+  padding: 0.8rem 2.2rem;
   border-radius: 2rem;
   font-weight: 700;
-  font-size: 1.05rem;
+  font-size: 1rem;
   box-shadow: 0 4px 15px rgba(0, 195, 248, 0.35);
   display: inline-flex;
   align-items: center;
@@ -201,7 +201,7 @@ a:hover {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  padding: 6rem 5% 4rem;
+  padding: 5rem 5% 4rem;
   background-color: #ffffff;
   background-image: 
     radial-gradient(circle at 45% 10%, rgba(254, 215, 170, 0.4) 0%, rgba(255, 255, 255, 0) 50%),
@@ -223,26 +223,28 @@ a:hover {
   text-align: left;
 }
 
+/* Compact Logo, Title & Subtitle sizing */
 .hero__logo {
-  width: 160px;
-  margin-bottom: 2rem;
+  width: 140px;
+  margin-bottom: 1.25rem;
 }
 
 .hero__title {
-  font-size: clamp(2.2rem, 4.2vw, 3.4rem);
+  font-size: clamp(1.8rem, 3.2vw, 2.6rem);
   font-weight: 900;
-  line-height: 1.15;
-  margin-bottom: 1.5rem;
+  line-height: 1.12;
+  margin-bottom: 1rem;
   color: var(--color-primary);
   letter-spacing: -0.02em;
 }
 
 .hero__description {
-  font-size: clamp(1rem, 1.6vw, 1.15rem);
+  font-size: clamp(0.9rem, 1.3vw, 1.05rem);
   font-weight: 500;
   color: var(--color-text-muted);
-  margin-bottom: 2.5rem;
-  line-height: 1.65;
+  margin-bottom: 1.75rem;
+  line-height: 1.55;
+  max-width: 500px;
 }
 
 .hero__actions {
@@ -265,7 +267,7 @@ a:hover {
   border-radius: 1.5rem;
   box-shadow: var(--shadow-lg);
   width: 100%;
-  max-width: 940px; /* Widened checkout widget */
+  max-width: 940px;
   min-height: 540px;
   display: flex;
   flex-direction: row;
@@ -277,7 +279,7 @@ a:hover {
 
 /* Reduced E-Commerce Product Sidebar Width (260px) */
 .widget-sidebar {
-  width: 260px; /* Reduced from 330px to give maximum space to checkout panel */
+  width: 260px;
   flex-shrink: 0;
   background-color: var(--color-sidebar-bg);
   border-right: 1px solid var(--color-border);
@@ -308,7 +310,6 @@ a:hover {
   font-weight: 700;
 }
 
-/* Product Info - Slightly smaller box to fit 260px cleanly */
 .widget-sidebar__product-details {
   display: flex;
   flex-direction: column;
@@ -355,7 +356,6 @@ a:hover {
   text-align: center;
 }
 
-/* Cost Breakdown */
 .widget-sidebar__breakdown {
   margin-top: auto;
   border-top: 1px dashed var(--color-border);
@@ -384,7 +384,7 @@ a:hover {
   display: none;
 }
 
-/* Expanded Checkout Content Panel (Right Panel - takes remaining 680px!) */
+/* Expanded Checkout Content Panel (Right Panel) */
 .widget-main {
   flex: 1;
   background-color: var(--color-card-bg);
@@ -393,7 +393,6 @@ a:hover {
   transition: background-color var(--transition-normal), color var(--transition-normal);
 }
 
-/* Dark mode theme for bank mock portal */
 .widget-main--dark {
   background-color: #1a212d !important;
   color: #ffffff !important;
@@ -412,7 +411,6 @@ a:hover {
   color: #22d3ee !important;
 }
 
-/* Clean, Spacious Widget Summary Header */
 .widget-summary-bar {
   background-color: var(--color-card-bg);
   padding: 1rem 2rem;
@@ -448,7 +446,6 @@ a:hover {
   white-space: nowrap;
 }
 
-/* Widget Content Area */
 .widget-content {
   padding: 1.75rem 2.25rem;
   flex-grow: 1;
@@ -482,7 +479,6 @@ a:hover {
   color: #94a3b8 !important;
 }
 
-/* Checkout selection step */
 .checkout-methods {
   display: flex;
   flex-direction: column;
@@ -561,7 +557,6 @@ a:hover {
   width: auto;
 }
 
-/* Alert box for demo guidance */
 .checkout-alert {
   background-color: #fffbeb;
   border: 1px solid #fef3c7;
@@ -575,7 +570,6 @@ a:hover {
   display: none;
 }
 
-/* Country selection styles in Widget */
 .country-selector {
   display: flex;
   gap: 0.5rem;
@@ -614,7 +608,6 @@ a:hover {
   transform: translateY(-1px);
 }
 
-/* Bank Grid inside Widget */
 .bank-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -656,7 +649,6 @@ a:hover {
   justify-content: center;
 }
 
-/* Selected Bank Confirmation View */
 .selected-bank-view {
   display: flex;
   flex-direction: column;
@@ -757,7 +749,6 @@ a:hover {
   transform: scale(1.05);
 }
 
-/* INLINE BANK PORTAL DESIGN STYLES */
 .bank-portal-inline {
   display: flex;
   flex-direction: column;
@@ -869,7 +860,6 @@ a:hover {
   background-color: rgba(255, 255, 255, 0.05);
 }
 
-/* Success view styling */
 .success-card {
   text-align: center;
   padding: 1rem 0;
@@ -943,7 +933,6 @@ a:hover {
   color: var(--color-primary);
 }
 
-/* Animations and Responsive adaptations */
 @media (max-width: 1024px) {
   .hero__grid {
     grid-template-columns: 1fr;
@@ -954,9 +943,14 @@ a:hover {
   .hero__content {
     text-align: center;
   }
+
+  .hero__description {
+    margin-left: auto;
+    margin-right: auto;
+  }
   
   .hero__logo {
-    margin: 0 auto 2rem;
+    margin: 0 auto 1.25rem;
   }
   
   .hero__actions {
