@@ -439,6 +439,24 @@ const banks = [
     ],
     "logo": "assets/banks/italy_ebury.png",
     "remoteLogo": "https://developer.irispay.bg/assets/images/banks/ebury/ebury.png"
+  },
+  {
+    "id": "bper_it",
+    "name": "BPER: Banca",
+    "countries": [
+      "it"
+    ],
+    "logo": "assets/banks/italy_bper.png",
+    "remoteLogo": "https://developer.irispay.bg/assets/images/banks/bper/bper.png"
+  },
+  {
+    "id": "intesa_it",
+    "name": "Intesa Sanpaolo",
+    "countries": [
+      "it"
+    ],
+    "logo": "assets/banks/italy_intesa.png",
+    "remoteLogo": "https://developer.irispay.bg/assets/images/banks/intesa/intesa.png"
   }
 ];
 
