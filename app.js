@@ -454,6 +454,10 @@ const translations = {
     methodTransfer: 'Банков превод',
     methodCod: 'Наложен платеж',
     methodIris: 'Плати с IRIS Pay',
+    methodCardDesc: 'Високи такси и риск от кражба на данни',
+    methodTransferDesc: 'Забавяне до 2 дни и ръчно потвърждение',
+    methodCodDesc: 'По-висока такса доставка и нужда от пари в брой',
+    methodIrisDesc: 'бързо, лесно и удобно',
     alertMessage: 'Това е демонстрация на плащане през IRIS Pay. Моля, изберете платежния метод с логото на IRIS Pay, за да продължите демото.',
     title: 'Държава на банковата сметка',
     chooseBank: 'Изберете Вашата банка',
@@ -498,6 +502,10 @@ const translations = {
     methodTransfer: 'Bank Transfer',
     methodCod: 'Cash on Delivery',
     methodIris: 'Pay with IRIS Pay',
+    methodCardDesc: 'High fees and risk of card data theft',
+    methodTransferDesc: 'Up to 2 days delay and manual confirmation',
+    methodCodDesc: 'Higher shipping fee and cash requirement',
+    methodIrisDesc: 'fast, easy and convenient',
     alertMessage: 'This is a demo of IRIS Pay. Please select the payment method with the IRIS Pay logo to continue.',
     title: 'Bank Account Country',
     chooseBank: 'Select Your Bank',
@@ -542,6 +550,10 @@ const translations = {
     methodTransfer: 'Transfer bancar',
     methodCod: 'Plată la livrare',
     methodIris: 'Plătește cu IRIS Pay',
+    methodCardDesc: 'Comisioane mari și risc de furt de date',
+    methodTransferDesc: 'Întârziere de până la 2 zile și confirmare manuală',
+    methodCodDesc: 'Taxă de expediere mai mare și necesitate de numerar',
+    methodIrisDesc: 'rapid, simplu și convenabil',
     alertMessage: 'Aceasta este o demonstrație a IRIS Pay. Vă rugăm să selectați metoda de plată cu sigla IRIS Pay pentru a continua.',
     title: 'Țara contului bancar',
     chooseBank: 'Selectați banca',
@@ -586,6 +598,10 @@ const translations = {
     methodTransfer: 'Bankovni prijenos',
     methodCod: 'Plaćanje pouzećem',
     methodIris: 'Plati putem IRIS Pay',
+    methodCardDesc: 'Visoke naknade i rizik od krađe podataka',
+    methodTransferDesc: 'Kašnjenje do 2 dana i ručna potvrda',
+    methodCodDesc: 'Viša naknada za dostavu i potreba za gotovinom',
+    methodIrisDesc: 'brzo, jednostavno i praktično',
     alertMessage: 'Ovo je demonstracija IRIS Pay-a. Odaberite način plaćanja s logotipom IRIS Pay za nastavak.',
     title: 'Država bankovnog računa',
     chooseBank: 'Odaberite svoju banku',
@@ -630,6 +646,10 @@ const translations = {
     methodTransfer: 'Τραπεζική μεταφορά',
     methodCod: 'Αντικαταβολή',
     methodIris: 'Πληρωμή με IRIS Pay',
+    methodCardDesc: 'Υψηλές χρεώσεις και κίνδυνος κλοπής δεδομένων',
+    methodTransferDesc: 'Καθυστέρηση έως 2 ημέρες και μη αυτόματη επιβεβαίωση',
+    methodCodDesc: 'Υψηλότερο κόστος αποστολής και ανάγκη για μετρητά',
+    methodIrisDesc: 'γρήγορα, εύκολα και βολικά',
     alertMessage: 'Αυτή είναι μια επίδειξη του IRIS Pay. Επιλέξτε τη μέθοδο πληρωμής με το λογότυπο IRIS Pay για να συνεχίσετε.',
     title: 'Χώρα τραπεζικού λογαριασμού',
     chooseBank: 'Επιλέξτε την τράπεζά σας',
@@ -674,6 +694,10 @@ const translations = {
     methodTransfer: 'Bonifico bancario',
     methodCod: 'Contrassegno',
     methodIris: 'Paga con IRIS Pay',
+    methodCardDesc: 'Commissioni elevate e rischio di furto dati',
+    methodTransferDesc: 'Fino a 2 giorni di ritardo e conferma manuale',
+    methodCodDesc: 'Spese di spedizione più elevate e necessità di contanti',
+    methodIrisDesc: 'veloce, facile e conveniente',
     alertMessage: 'Questa è una demo di IRIS Pay. Seleziona il metodo di pagamento con il logo IRIS Pay per continuare.',
     title: 'Paese del conto bancario',
     chooseBank: 'Seleziona la tua banca',
@@ -1028,7 +1052,10 @@ function resetWidgetFlow() {
           <div class="method-card" data-method="card">
             <input type="radio" name="payment-method" class="method-card__radio">
             <div class="method-card__details">
-              <span class="method-card__name" data-t="methodCard">${translations[state.lang].methodCard}</span>
+              <div class="method-card__text-group">
+                <span class="method-card__name" data-t="methodCard">${translations[state.lang].methodCard}</span>
+                <span class="method-card__desc" data-t="methodCardDesc">${translations[state.lang].methodCardDesc}</span>
+              </div>
               <div class="method-card__icons">
                 <svg class="method-card__icon" viewBox="0 0 36 24" width="36" height="24"><rect width="36" height="24" rx="3" fill="#0f1c3f"/><text x="4" y="16" fill="#fff" font-size="9" font-family="sans-serif" font-weight="bold">CARD</text></svg>
               </div>
@@ -1038,7 +1065,10 @@ function resetWidgetFlow() {
           <div class="method-card" data-method="transfer">
             <input type="radio" name="payment-method" class="method-card__radio">
             <div class="method-card__details">
-              <span class="method-card__name" data-t="methodTransfer">${translations[state.lang].methodTransfer}</span>
+              <div class="method-card__text-group">
+                <span class="method-card__name" data-t="methodTransfer">${translations[state.lang].methodTransfer}</span>
+                <span class="method-card__desc" data-t="methodTransferDesc">${translations[state.lang].methodTransferDesc}</span>
+              </div>
               <div class="method-card__icons">
                 <svg class="method-card__icon" viewBox="0 0 36 24" width="36" height="24"><rect width="36" height="24" rx="3" fill="#eceff1"/><path d="M18 6 L8 12 L28 12 Z M10 12 L10 18 M14 12 L14 18 M18 12 L18 18 M22 12 L22 18 M26 12 L26 18 M6 18 L30 18 L30 20 L6 20 Z" fill="#546e7a"/></svg>
               </div>
@@ -1048,7 +1078,10 @@ function resetWidgetFlow() {
           <div class="method-card" data-method="cod">
             <input type="radio" name="payment-method" class="method-card__radio">
             <div class="method-card__details">
-              <span class="method-card__name" data-t="methodCod">${translations[state.lang].methodCod}</span>
+              <div class="method-card__text-group">
+                <span class="method-card__name" data-t="methodCod">${translations[state.lang].methodCod}</span>
+                <span class="method-card__desc" data-t="methodCodDesc">${translations[state.lang].methodCodDesc}</span>
+              </div>
               <div class="method-card__icons">
                 <svg class="method-card__icon" viewBox="0 0 36 24" width="36" height="24"><rect width="36" height="24" rx="3" fill="#eceff1"/><path d="M8 8 L28 8 L28 18 L8 18 Z M18 6 L12 8 M18 6 L24 8 M18 8 L18 18" stroke="#546e7a" stroke-width="1.5" fill="none"/></svg>
               </div>
@@ -1058,7 +1091,10 @@ function resetWidgetFlow() {
           <div class="method-card method-card--iris method-card--selected" data-method="iris">
             <input type="radio" name="payment-method" class="method-card__radio" checked>
             <div class="method-card__details">
-              <span class="method-card__name" data-t="methodIris">${translations[state.lang].methodIris}</span>
+              <div class="method-card__text-group">
+                <span class="method-card__name" data-t="methodIris">${translations[state.lang].methodIris}</span>
+                <span class="method-card__desc" data-t="methodIrisDesc">${translations[state.lang].methodIrisDesc}</span>
+              </div>
               <img src="iris-logo.svg" alt="IRIS Pay Logo" class="method-card__logo">
             </div>
           </div>

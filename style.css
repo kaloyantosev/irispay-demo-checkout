@@ -541,6 +541,19 @@ a:hover {
   font-size: 0.95rem;
 }
 
+.method-card__text-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 0.1rem;
+}
+
+.method-card__desc {
+  font-size: 0.78rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
 .method-card__icons {
   display: flex;
   gap: 0.25rem;
