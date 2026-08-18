@@ -414,15 +414,6 @@ const banks = [
     "remoteLogo": "https://developer.irispay.bg/assets/images/banks/ebury/ebury.png"
   },
   {
-    "id": "boc_cy",
-    "name": "Bank of Cyprus",
-    "countries": [
-      "cy"
-    ],
-    "logo": "assets/banks/cyprus_bank_of_cyprus.png",
-    "remoteLogo": "https://developer.irispay.bg/assets/images/banks/boc/boc.png"
-  },
-  {
     "id": "unicredit_it",
     "name": "UniCredit",
     "countries": [
