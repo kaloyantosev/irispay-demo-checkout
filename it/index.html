@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IRIS Pay - Умните бизнеси не чакат парите си</title>
+  <meta name="description" content="IRIS Pay прави приемането на плащания бързо, сигурно и с до 60% по-малко разходи. Ние създаваме бъдещето на дигиталните разплащания.">
+  <meta name="keywords" content="IRIS Pay, Open Banking, плащане по сметка, БГ банки, финтех">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="shortcut icon" href="../iris-logo.svg" type="image/svg+xml">
+</head>
+<body>
+
+  <!-- Floating Top-Right 6-Language Switcher (BG, EN, RO, HR, GR, IT) -->
+  <div class="floating-lang-selector" id="lang-selector">
+    <div class="language-selector">
+      <button class="language-btn" id="language-toggle">
+        <span id="current-lang-text">IT</span>
+        <svg viewBox="0 0 10 6">
+          <path d="M1 1L5 5L9 1"/>
+        </svg>
+      </button>
+      <ul class="language-dropdown" id="language-dropdown">
+        <li class="language-item" data-lang="bg"><a href="#">🇧🇬 Български (BG)</a></li>
+        <li class="language-item" data-lang="en"><a href="#">🇬🇧 English (EN)</a></li>
+        <li class="language-item" data-lang="ro"><a href="#">🇷🇴 Română (RO)</a></li>
+        <li class="language-item" data-lang="hr"><a href="#">🇭🇷 Hrvatski (HR)</a></li>
+        <li class="language-item" data-lang="gr"><a href="#">🇬🇷 Ελληνικά (GR)</a></li>
+        <li class="language-item" data-lang="it"><a href="#">🇮🇹 Italiano (IT)</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <main class="hero" id="hero-section">
+    <div class="hero__grid">
+      <!-- Left Column: Branding Title & Description -->
+      <div class="hero__content">
+        <img src="../iris-logo.svg" alt="IRIS Logo Big" class="hero__logo">
+        <h1 class="hero__title" data-t="heroTitle">Умните бизнеси не чакат парите си</h1>
+        <p class="hero__description" data-t="heroSubtitle">
+          IRIS Pay прави приемането на плащания бързо, сигурно и с до 60% по-малко разходи. 
+          Ние създаваме бъдещето на дигиталните разплащания.
+        </p>
+        <div class="hero__actions">
+          <a href="https://irispay.eu/bg/register" target="_blank" class="btn btn--cyan" id="start-now-btn" data-t="startNow">
+            Започни сега
+          </a>
+        </div>
+      </div>
+      
+      <!-- Right Column: Interactive Embedded Widget -->
+      <div class="demo-widget-column" id="demo-widget-section">
+        <!-- Widened payment widget layout (940px max-width) -->
+        <div class="payment-widget">
+          
+          <!-- E-Commerce Left Panel Sidebar -->
+          <aside class="widget-sidebar">
+            <div class="widget-sidebar__store-header">
+              <span data-t="storeHeader">Тестов магазин</span>
+              <span class="widget-sidebar__store-badge">Demo</span>
+            </div>
+            
+            <div class="widget-sidebar__product-details">
+              <div class="widget-sidebar__product-img-box">
+                <img src="../demo_hoodie.png" alt="Premium Hoodie" class="widget-sidebar__product-img">
+              </div>
+              <h3 class="widget-sidebar__product-title" data-t="productTitle">Premium Navy Hoodie</h3>
+              <p class="widget-sidebar__product-meta">
+                <span data-t="productSize">Размер: L</span> &bull; <span data-t="productQty">Количество: 1</span>
+              </p>
+            </div>
+            
+            <!-- Mobile compact summary info -->
+            <div class="widget-sidebar__mobile-summary">
+              <span class="widget-sidebar__mobile-total-label" data-t="totalLabel">Общо</span>
+              <span class="widget-sidebar__mobile-total-val">30.00 EUR</span>
+            </div>
+            
+            <div class="widget-sidebar__breakdown">
+              <div class="widget-sidebar__row">
+                <span data-t="subtotalLabel">Междинна сума</span>
+                <span>30.00 EUR</span>
+              </div>
+              <div class="widget-sidebar__row">
+                <span data-t="shippingLabel">Доставка</span>
+                <span data-t="shippingVal">Безплатна</span>
+              </div>
+              <div class="widget-sidebar__row widget-sidebar__row--total">
+                <span data-t="totalLabel">Общо</span>
+                <span>30.00 EUR</span>
+              </div>
+            </div>
+          </aside>
+          
+          <!-- Checkout Right Panel Main -->
+          <section class="widget-main">
+            <!-- Widget Summary Header -->
+            <div class="widget-summary-bar">
+              <div class="widget-summary-bar__merchant-box">
+                <span class="widget-summary-bar__merchant" data-t="merchantLabel">Търговец:</span>
+                <span class="widget-summary-bar__merchant">Iris Solutions</span>
+                <img src="../iris-logo.svg" alt="Iris Solutions Logo" class="widget-summary-bar__merchant-logo">
+              </div>
+              
+              <!-- Hidden Timer (activated during Iris Pay flow) -->
+              <div class="timer-container" id="widget-timer-header" style="display: none;">
+                <div class="timer-box">
+                  <span id="timer-minutes">04</span>:<span id="timer-seconds">00</span>
+                </div>
+              </div>
+              
+              <div class="widget-summary-bar__amount">30.00 EUR</div>
+            </div>
+            
+            <!-- Widget Content Body -->
+            <div class="widget-content" id="widget-content-body">
+              
+              <!-- Step 1: Mock Merchant Checkout -->
+              <div id="view-checkout-select">
+                <h3 class="widget-title" data-t="checkoutTitle">Изберете метод на плащане</h3>
+                <p class="widget-subtitle" data-t="checkoutSubtitle">Моля, изберете предпочитания начин за плащане на Вашата поръчка.</p>
+                
+                <div class="checkout-methods">
+                  <!-- Method 1: Card -->
+                  <div class="method-card" data-method="card">
+                    <input type="radio" name="payment-method" class="method-card__radio" id="method-card-input">
+                    <div class="method-card__details">
+                      <div class="method-card__text-group">
+                        <span class="method-card__name" data-t="methodCard">Плащане с карта</span>
+                        <span class="method-card__desc" data-t="methodCardDesc">високи такси и риск от кражба на данни</span>
+                      </div>
+                      <div class="method-card__icons">
+                        <svg class="method-card__icon" viewBox="0 0 36 24" width="36" height="24">
+                          <rect width="36" height="24" rx="3" fill="#0f1c3f"/>
+                          <text x="4" y="16" fill="#fff" font-size="9" font-family="sans-serif" font-weight="bold">CARD</text>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Method 2: Bank Transfer -->
+                  <div class="method-card" data-method="transfer">
+                    <input type="radio" name="payment-method" class="method-card__radio" id="method-transfer-input">
+                    <div class="method-card__details">
+                      <div class="method-card__text-group">
+                        <span class="method-card__name" data-t="methodTransfer">Банков превод</span>
+                        <span class="method-card__desc" data-t="methodTransferDesc">ръчно въвеждане и бавен процес</span>
+                      </div>
+                      <div class="method-card__icons">
+                        <svg class="method-card__icon" viewBox="0 0 36 24" width="36" height="24">
+                          <rect width="36" height="24" rx="3" fill="#eceff1"/>
+                          <path d="M18 6 L8 12 L28 12 Z M10 12 L10 18 M14 12 L14 18 M18 12 L18 18 M22 12 L22 18 M26 12 L26 18 M6 18 L30 18 L30 20 L6 20 Z" fill="#546e7a"/>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Method 3: COD -->
+                  <div class="method-card" data-method="cod">
+                    <input type="radio" name="payment-method" class="method-card__radio" id="method-cod-input">
+                    <div class="method-card__details">
+                      <div class="method-card__text-group">
+                        <span class="method-card__name" data-t="methodCod">Наложен платеж</span>
+                        <span class="method-card__desc" data-t="methodCodDesc">забавени плащания и високи такси</span>
+                      </div>
+                      <div class="method-card__icons">
+                        <svg class="method-card__icon" viewBox="0 0 36 24" width="36" height="24">
+                          <rect width="36" height="24" rx="3" fill="#eceff1"/>
+                          <path d="M8 8 L28 8 L28 18 L8 18 Z M18 6 L12 8 M18 6 L24 8 M18 8 L18 18" stroke="#546e7a" stroke-width="1.5" fill="none"/>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Method 4: IRIS Pay -->
+                  <div class="method-card method-card--iris method-card--selected" data-method="iris">
+                    <input type="radio" name="payment-method" class="method-card__radio" id="method-iris-input" checked>
+                    <div class="method-card__details">
+                      <div class="method-card__text-group">
+                        <span class="method-card__name" data-t="methodIris">Плати с IRIS Pay</span>
+                        <span class="method-card__desc" data-t="methodIrisDesc">бързо, лесно и удобно</span>
+                      </div>
+                      <img src="../iris-logo.svg" alt="IRIS Pay Logo" class="method-card__logo">
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Guidance Alert Box -->
+                <div class="checkout-alert" id="checkout-alert"></div>
+                
+                <button class="btn btn--cyan" id="btn-checkout-next" style="margin-top: 1rem; border-radius: 2rem; width: 100%;">
+                  <span data-t="continue">Продължи</span>
+                </button>
+              </div>
+              
+              <!-- Step 2: Country & Bank Selection (Initially Hidden) -->
+              <div id="view-bank-list" style="display: none;">
+                <h3 class="widget-title" data-t="title">Държава на банковата сметка</h3>
+                
+                <!-- Country Selector flags -->
+                <div class="country-selector" id="flags-container"></div>
+                
+                <h3 class="widget-title" data-t="chooseBank" style="margin-top: 1rem;">Изберете Вашата банка</h3>
+                <p class="widget-subtitle" data-t="chooseBankSubtitle">Когато изберете банката си, ще бъдете пренасочени към нейното приложение.</p>
+                
+                <!-- Bank Items Grid -->
+                <div class="bank-grid" id="bank-grid"></div>
+              </div>
+              
+              <!-- Step 3: Selected Bank Confirmation (Initially Hidden) -->
+              <div id="view-bank-confirm" class="selected-bank-view" style="display: none;">
+                <div class="selected-bank-header">
+                  <div class="selected-bank-title">
+                    <span data-t="selectedBank">Избрана банка:</span>
+                    <span class="selected-bank-name dynamic-bank-name">Revolut</span>
+                  </div>
+                  <a href="#" class="back-link" id="back-to-list">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="transform: rotate(180deg);">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                    <span data-t="selectOtherBank">Изберете друга банка</span>
+                  </a>
+                </div>
+                
+                <div class="selected-bank-instructions" id="instructions-text">
+                  <!-- Dynamically populated instructions -->
+                </div>
+                
+                <div class="selected-bank-actions">
+                  <button class="btn btn--widget-continue" id="btn-continue-widget">
+                    <span data-t="continue">Продължи</span>
+                  </button>
+                  <button class="btn--circle-arrow-widget" id="btn-continue-circle-widget">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              
+              <!-- Step 4: Inline Mock Bank Portal (Initially Hidden) -->
+              <div id="view-bank-portal" class="bank-portal-inline" style="display: none;">
+                <div class="bank-portal-inline__logo" id="portal-bank-logo-container"></div>
+                <h2 class="bank-portal-inline__title" data-t="bankPortalTitle">Потвърждение на плащането</h2>
+                <p class="bank-portal-inline__desc" id="portal-desc-text" data-t="bankPortalDesc">
+                  Моля, потвърдете трансакцията към Iris Solutions.
+                </p>
+                
+                <div class="bank-portal-inline__info-box">
+                  <div class="bank-portal-inline__row">
+                    <span class="bank-portal-inline__label" data-t="merchantLabel">Търговец:</span>
+                    <span class="bank-portal-inline__val" id="portal-merchant-val">Iris Solutions</span>
+                  </div>
+                  <div class="bank-portal-inline__row">
+                    <span class="bank-portal-inline__label" data-t="description">Описание:</span>
+                    <span class="bank-portal-inline__val" id="portal-desc-val">IRIS-1042: Premium Navy Hoodie</span>
+                  </div>
+                  <div class="bank-portal-inline__row">
+                    <span class="bank-portal-inline__label" data-t="date">Дата:</span>
+                    <span class="bank-portal-inline__val" id="portal-date-val">2026-07-08 14:53:24</span>
+                  </div>
+                  <div class="bank-portal-inline__row">
+                    <span class="bank-portal-inline__label" data-t="amountLabel">Сума:</span>
+                    <span class="bank-portal-inline__val" id="portal-amount-val">30.00 EUR</span>
+                  </div>
+                </div>
+                
+                <button id="portal-btn-confirm" class="btn btn--portal-confirm" data-t="bankPortalConfirm">Потвърди плащането</button>
+                <button id="portal-btn-cancel" class="btn btn--portal-cancel" data-t="bankPortalCancel">Откажи плащането</button>
+              </div>
+              
+            </div>
+          </section>
+          
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="../app.js"></script>
+</body>
+</html>

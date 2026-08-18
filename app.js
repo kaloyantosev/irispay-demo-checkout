@@ -414,6 +414,15 @@ const banks = [
     "remoteLogo": "https://developer.irispay.bg/assets/images/banks/ebury/ebury.png"
   },
   {
+    "id": "boc_cy",
+    "name": "Bank of Cyprus",
+    "countries": [
+      "cy"
+    ],
+    "logo": "assets/banks/cyprus_bank_of_cyprus.png",
+    "remoteLogo": "https://developer.irispay.bg/assets/images/banks/boc/boc.png"
+  },
+  {
     "id": "unicredit_it",
     "name": "UniCredit",
     "countries": [
@@ -752,13 +761,43 @@ const translations = {
   }
 };
 
+function detectLanguage() {
+  const path = window.location.pathname.toLowerCase();
+  const htmlLang = (document.documentElement.lang || '').toLowerCase();
+  
+  if (path.includes('/en') || htmlLang === 'en') {
+    state.lang = 'en';
+  } else if (path.includes('/ro') || htmlLang === 'ro') {
+    state.lang = 'ro';
+    state.selectedCountry = 'ro';
+  } else if (path.includes('/hr') || htmlLang === 'hr') {
+    state.lang = 'hr';
+    state.selectedCountry = 'hr';
+  } else if (path.includes('/gr') || htmlLang === 'el' || htmlLang === 'gr') {
+    state.lang = 'gr';
+    state.selectedCountry = 'gr';
+  } else if (path.includes('/it') || htmlLang === 'it') {
+    state.lang = 'it';
+    state.selectedCountry = 'it';
+  } else {
+    state.lang = 'bg';
+    state.selectedCountry = 'bg';
+  }
+}
+
 // Initialize App
 document.addEventListener('DOMContentLoaded', () => {
+  // Detect language from URL route or HTML lang tag
+  detectLanguage();
+
   // Update Live Date
   updateLiveDate();
 
   // Language Dropdown Setup
   initLanguageSelector();
+
+  // Translate page to detected language
+  translatePage();
 
   // Load flags
   renderFlags();
@@ -1260,6 +1299,10 @@ function initLanguageSelector() {
   const dropdown = document.getElementById('language-dropdown');
   const currentLangText = document.getElementById('current-lang-text');
   
+  if (currentLangText) {
+    currentLangText.textContent = state.lang.toUpperCase();
+  }
+
   if (!btn || !dropdown) return;
   
   btn.addEventListener('click', (e) => {
@@ -1283,6 +1326,8 @@ function initLanguageSelector() {
         currentLangText.textContent = newLang.toUpperCase();
       }
       translatePage();
+      // Navigate to dedicated route directory
+      window.location.href = `/${newLang}/`;
     });
   });
 }
