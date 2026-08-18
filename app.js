@@ -862,8 +862,6 @@ function initCheckoutSelector() {
       } else {
         // Transition to Iris Pay bank selector
         switchToStep('bank-list');
-        // Start countdown timer when entering Iris Pay payment gateway
-        startTimer();
       }
     });
   }
@@ -1252,36 +1250,13 @@ function resetWidgetFlow() {
   }
 }
 
-// Timer Logic
+// Timer Logic (Disabled)
 function startTimer() {
-  const timerMinEl = document.getElementById('timer-minutes');
-  const timerSecEl = document.getElementById('timer-seconds');
-  if (!timerMinEl || !timerSecEl) return;
-
-  state.timerSeconds = 240;
-  timerMinEl.textContent = '04';
-  timerSecEl.textContent = '00';
-
-  clearInterval(state.timerInterval);
-  state.timerInterval = setInterval(() => {
-    state.timerSeconds--;
-    
-    const minutes = Math.floor(state.timerSeconds / 60);
-    const seconds = state.timerSeconds % 60;
-    
-    timerMinEl.textContent = minutes.toString().padStart(2, '0');
-    timerSecEl.textContent = seconds.toString().padStart(2, '0');
-    
-    if (state.timerSeconds <= 0) {
-      clearInterval(state.timerInterval);
-      alert("Сесията изтече!");
-      resetWidgetFlow();
-    }
-  }, 1000);
+  if (state.timerInterval) clearInterval(state.timerInterval);
 }
 
 function stopTimer() {
-  clearInterval(state.timerInterval);
+  if (state.timerInterval) clearInterval(state.timerInterval);
 }
 
 // Language Selector dropdown supporting 6 languages (BG, EN, RO, HR, GR, IT)
