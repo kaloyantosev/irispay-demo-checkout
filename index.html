@@ -8,5 +8,35 @@
 </head>
 <body>
   <p>Redirecting to <a href="/bg/">/bg/</a>...</p>
+  <script>
+    // Изпраща височината на съдържанието към родителската страница
+    if (window.self !== window.top) {
+      document.documentElement.style.overflow = "hidden";
+      document.body.style.overflow = "hidden";
+
+      const content = document.querySelector(".wrap") || document.querySelector(".hero") || document.querySelector("main") || document.body;
+      if (content && content.classList.contains("hero")) {
+        content.style.minHeight = "auto";
+      }
+      let lastHeight = 0;
+
+      const postHeight = () => {
+        if (!content) return;
+        const height = Math.ceil(content.getBoundingClientRect().height);
+        if (height === lastHeight || height === 0) return;
+        lastHeight = height;
+        window.parent.postMessage({ type: "compound-calc:height", height }, "*");
+      };
+
+      if (window.ResizeObserver && content) {
+        new ResizeObserver(postHeight).observe(content);
+      }
+      window.addEventListener("load", postHeight);
+      document.querySelectorAll("details").forEach((d) =>
+        d.addEventListener("toggle", postHeight)
+      );
+      postHeight();
+    }
+  </script>
 </body>
 </html>
